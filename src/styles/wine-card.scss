@@ -1,0 +1,84 @@
+.wine-card {
+    background: #F4E5D4;
+
+    .slick-prev{
+        filter: brightness(0) saturate(100%) invert(72%) sepia(79%);
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .slick-next{
+        filter: brightness(0) saturate(100%) invert(72%) sepia(79%);
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .slick-slide{
+        img{
+            height: 349px;
+            margin: 0 auto;
+        }
+    }
+
+.product-text{
+    padding-top: 50px;
+    .product-head{
+        font-family: 'Arno Pro',sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 110%;
+        text-align: center;
+        color: #130F02;
+    }
+
+    .product-body{
+        font-family: 'Mondia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 130%;
+        text-align: center;
+        color: #130F02;
+    }
+
+    .product__btn {
+        text-align: center;
+
+        button {
+            border: 1px solid #974D24;
+            color: #974D24;
+            font-family: 'Arno Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            color: #974D24;
+            text-transform: none;
+            padding: 11px 67px;
+            transition: .3s ease-in-out;
+
+            &:hover{
+                background: #974D24;
+                color: white;
+            }
+        }
+    }
+}
+
+    .section-title {
+        font-family: 'Arno Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 55px;
+        line-height: 66px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #974D24;
+    }
+
+    .wine__card-index{
+        padding-top: 50px;
+    }
+}

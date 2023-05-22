@@ -1,0 +1,28 @@
+.navbar {
+  background: black !important;
+  opacity: 1 !important;
+}
+.navbar .main-nav a {
+  color: white;
+}
+.navbar .navbar-nav {
+  align-items: center;
+  gap: 1.8rem;
+}
+.navbar .navbar-nav .search-index {
+  padding-right: 70px;
+}
+.navbar .navbar-nav .search-index svg {
+  cursor: pointer;
+  color: white;
+}
+.navbar .navbar-nav .social-link {
+  display: flex;
+  gap: 1.4rem;
+}
+.navbar .navbar-nav .social-link img, .navbar .navbar-nav .social-link svg {
+  cursor: pointer;
+}
+.navbar .navbar-nav .social-link svg {
+  color: white;
+}/*# sourceMappingURL=header.css.map */

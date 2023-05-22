@@ -1,0 +1,183 @@
+.home {
+  position: relative;
+  /* Centered text */
+}
+.home .home__main-image {
+  width: 100%;
+  opacity: 1;
+  height: 900px;
+  filter: brightness(60%);
+}
+.home .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44%;
+}
+.home .centered .home-title {
+  width: 100%;
+}
+.home .centered .home-subtitle {
+  color: #EF9700;
+  font-size: 28px;
+  padding: 10px 0;
+  font-family: "futura-light", sans-serif;
+}
+.home .centered .home-description {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 20px;
+  z-index: 99;
+  margin: 0 auto;
+  max-width: 62%;
+}
+.home .home-content {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.home .home-content .home__index {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: translate(-50%, 50%);
+}
+.home .home-content .home__index h1 {
+  color: white;
+}
+
+.about__index {
+  background: #F4E5D4;
+}
+.about__index .about__main {
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+}
+.about__index .about__main .about__content .title {
+  font-family: "Arno Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 66px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #974D24;
+}
+.about__index .about__main .about__content .description {
+  text-align: center;
+  max-width: 95%;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+.about__index .about__main .about__content .about__btn {
+  text-align: center;
+}
+.about__index .about__main .about__content .about__btn button {
+  border: 1px solid #974D24;
+  color: #974D24;
+  font-family: "Arno Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #974D24;
+  text-transform: none;
+  padding: 11px 67px;
+}
+.about__index .about__main img {
+  width: 100%;
+}
+
+.homeCenter {
+  width: 100%;
+  background: #F4E5D4;
+}
+
+.home__video {
+  background: #F4E5D4;
+  padding-top: 140px;
+}
+.home__video video {
+  pointer-events: none;
+}
+.home__video .video-content {
+  position: relative;
+}
+.home__video .video-content .gif-text {
+  position: absolute;
+  top: -296px;
+  left: 7%;
+  max-width: 36%;
+}
+.home__video .video-content .gif-head {
+  font-family: "arno-pro", "sans-serif";
+  font-size: 50px;
+  line-height: 75px;
+  color: #FAFAFD;
+  margin-bottom: 45px;
+}
+.home__video .video-content .video__btn button {
+  border: 1px solid white;
+  color: white;
+  padding: 5px 40px;
+}
+
+.home__brand {
+  background: #F4E5D4;
+  padding-top: 80px;
+  /* Bottom left text */
+  /* Bottom right text */
+}
+.home__brand .brand__thumbnail {
+  position: relative;
+}
+.home__brand .bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 96px;
+  top: 61px;
+  color: white;
+  font-family: "arno-pro", "sans-serif";
+  font-size: 55px;
+  line-height: 62px;
+  color: #FAFAFD;
+  max-width: 100%;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+.home__brand .bottom-left button {
+  border: 1px solid white;
+  color: white;
+  padding: 5px 40px;
+}
+.home__brand .bottom-right {
+  position: absolute;
+  bottom: 82px;
+  right: 125px;
+  font-weight: bold;
+  color: white;
+  font-family: "arno-pro", "sans-serif";
+  font-size: 55px;
+  line-height: 62px;
+  color: #FAFAFD;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.home__brand .bottom-right .brand__btn {
+  text-align: center;
+}
+.home__brand .bottom-right button {
+  border: 1px solid white;
+  color: white;
+  padding: 5px 50px;
+}/*# sourceMappingURL=home.css.map */

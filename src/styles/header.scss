@@ -1,0 +1,31 @@
+.navbar{
+    background: black !important;
+    opacity: 1 !important;
+    .main-nav{
+        a{
+            color: white;
+        }
+    }
+    .navbar-nav{
+        align-items: center;
+        gap: 1.8rem;
+        .search-index{
+            padding-right: 70px;
+            svg{
+                cursor: pointer;
+                color: white;
+            }
+        }
+
+        .social-link{
+            display: flex;
+            gap: 1.4rem;
+            img,svg{
+                cursor: pointer;
+            }
+            svg{
+                color: white;
+            }
+        }
+    }
+}
