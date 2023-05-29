@@ -1,0 +1,184 @@
+.footer-index .footer-list-item {
+  background: #E7D2BB;
+}
+.footer-index .footer-list-item .footer__main {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0;
+}
+.footer-index .footer-list-item .footer__nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 140px;
+  list-style: none;
+  padding-left: 0;
+}
+.footer-index .footer-list-item .footer__nav li {
+  padding-bottom: 20px;
+}
+.footer-index .footer-list-item .footer__nav a {
+  font-family: "Arno Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #292929;
+  transition: 0.4s ease-in-out;
+}
+.footer-index .footer-list-item .footer__nav a:hover {
+  color: #EF9700;
+}
+.footer-index .footer-list-item .footer__contact {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.footer-index .footer-list-item .footer__contact li {
+  display: flex;
+  padding-bottom: 8px;
+}
+.footer-index .footer-list-item .footer__contact p {
+  font-family: "Arno Pro", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 14px;
+  text-align: right;
+  text-transform: capitalize;
+  color: #292929;
+  padding-right: 25px;
+  padding-top: 7px;
+}
+.footer-index .footer-list-item .footer__contact a {
+  font-family: "Mondia", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #292929;
+}
+.footer-index .footer-list-item .social__link {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.footer-index .footer-list-item .social__link svg {
+  color: black !important;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.footer-index .footer__bottom {
+  background: #F4E5D4;
+}
+.footer-index .footer__bottom .footer__bottom-index {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+.footer-index .footer__bottom .footer__bottom-index img {
+  width: 6%;
+}
+.footer-index .footer__bottom .footer__bottom-index h5 {
+  font-family: "Arno Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #505050;
+}
+
+@media screen and (max-width: 576px) {
+  .footer-index .footer__main {
+    position: relative;
+    flex-direction: column;
+  }
+  .footer-index .footer__nav {
+    width: 100%;
+    padding-left: 17px !important;
+  }
+  .footer-index .footer__contact {
+    padding-left: 1rem !important;
+  }
+  .footer-index .footer__contact li {
+    width: 100%;
+    min-width: 300px;
+  }
+  .footer-index .footer__contact .contact-text {
+    max-width: 59%;
+  }
+  .footer-index .footer__bottom-index {
+    flex-wrap: wrap !important;
+  }
+  .footer-index .footer__bottom-index img {
+    width: 12%;
+  }
+  .footer-index .social__link {
+    justify-content: end;
+    text-align: end;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 19px;
+    bottom: 108px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .footer-index .footer__main {
+    position: relative;
+    flex-direction: column;
+  }
+  .footer-index .footer__nav {
+    width: 100%;
+    padding-left: 17px !important;
+  }
+  .footer-index .footer__contact {
+    padding-left: 1rem !important;
+  }
+  .footer-index .footer__contact li {
+    width: 100%;
+    min-width: 300px;
+  }
+  .footer-index .social__link {
+    justify-content: end;
+    text-align: end;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 19px;
+    bottom: 108px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .footer-index .footer__main {
+    position: relative;
+    flex-direction: column;
+  }
+  .footer-index .footer__nav {
+    width: 100%;
+    padding-left: 17px !important;
+  }
+  .footer-index .footer__contact {
+    padding-left: 1rem !important;
+  }
+  .footer-index .footer__contact li {
+    width: 100%;
+    min-width: 300px;
+  }
+  .footer-index .social__link {
+    justify-content: end;
+    text-align: end;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 65px;
+    bottom: 108px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .footer__main {
+    padding: 80px 13px !important;
+  }
+}/*# sourceMappingURL=footer.css.map */

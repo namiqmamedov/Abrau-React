@@ -6,23 +6,31 @@ import Facebook from '../../assets/header/facebook.svg'
 import Instagram from '../../assets/header/instagram.svg'
 import {AiOutlineGlobal} from 'react-icons/ai'
 import {BsSearch} from 'react-icons/bs'
+import {FaFacebookF} from 'react-icons/fa'
+import {FaInstagram} from 'react-icons/fa'
+import {Link} from 'react-router-dom'
 import '../../styles/header.css'
 
 function Header() {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar id='navbar' collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
         <Navbar.Brand href="/">
           <img src={Logo} alt="Logo" />
         </Navbar.Brand>
+
+        <div className="header__social-link">
+          <FaFacebookF/>
+          <FaInstagram/>
+        </div>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mx-auto main-nav">
-            <Nav.Link href='about'>HAQQIMIZDA</Nav.Link>
-            <Nav.Link href="abrau">AZ ABRAU</Nav.Link>
-            <Nav.Link href="news">XƏBƏRLƏR</Nav.Link>
-            <Nav.Link href="price-location">SATIŞ MƏNTƏQƏLƏRİ</Nav.Link>
-            <Nav.Link href="contact">ƏLAQƏ</Nav.Link>
+            <Link to='about'>HAQQIMIZDA</Link>
+            <Link to="product">MƏHSULLAR</Link>
+            <Link to="news">SATIŞ NÖQTƏLƏRI</Link>
+            <Link to="price-location">XƏBƏRLƏR</Link>
+            <Link to="contact">ƏLAQƏ</Link>
           </Nav>
           <Nav>
            <div className="search-index">
@@ -35,6 +43,7 @@ function Header() {
             </div>
           </Nav>
         </Navbar.Collapse>
+
       </Container>
     </Navbar>
   );

@@ -91,6 +91,11 @@
   color: #974D24;
   text-transform: none;
   padding: 11px 67px;
+  transition: 0.3s ease-in-out;
+}
+.about__index .about__main .about__content .about__btn button:hover {
+  background: #974D24;
+  color: white;
 }
 .about__index .about__main img {
   width: 100%;
@@ -128,6 +133,11 @@
   border: 1px solid white;
   color: white;
   padding: 5px 40px;
+  transition: 0.3s ease-in-out;
+}
+.home__video .video-content .video__btn button:hover {
+  background: white;
+  color: #ff2d00;
 }
 
 .home__brand {
@@ -138,6 +148,13 @@
 }
 .home__brand .brand__thumbnail {
   position: relative;
+}
+.home__brand .brand__btn button {
+  transition: 0.3s ease-in-out;
+}
+.home__brand .brand__btn button:hover {
+  background-color: white;
+  color: #ff2d00;
 }
 .home__brand .bottom-left {
   position: absolute;
@@ -180,4 +197,377 @@
   border: 1px solid white;
   color: white;
   padding: 5px 50px;
+}
+
+@media screen and (max-width: 576px) {
+  .home__main-image {
+    height: 553px !important;
+  }
+  .home .centered {
+    width: 66% !important;
+  }
+  .home .centered .home-title {
+    width: 92%;
+  }
+  .home .centered .home-subtitle {
+    font-size: 15px;
+    max-width: 212px;
+    margin: 0 auto;
+    padding: 12px 0;
+  }
+  .home .centered .home-description {
+    font-size: 19px;
+  }
+  .about__main {
+    flex-wrap: wrap-reverse;
+    margin-bottom: -70px;
+  }
+  .about__main img {
+    width: 75% !important;
+  }
+  .about__main .title {
+    font-size: 34px !important;
+  }
+  .about__main .col-lg-6 {
+    text-align: center;
+  }
+  .about__main .about__content .description {
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+  .about__main button {
+    padding: 10px 65px;
+    font-size: 0.8rem;
+  }
+  .homeCenter img {
+    width: 100%;
+  }
+  .home__brand .brand__thumbnail img {
+    width: 100%;
+  }
+  .home__brand .bottom-left {
+    text-align: end;
+    width: 79%;
+    top: 34%;
+    left: 46px;
+    font-size: 25px;
+  }
+  .home__brand .bottom-left button {
+    padding: 5px 10px;
+  }
+  .home__brand .bottom-right {
+    width: 79%;
+    top: 6%;
+    left: 20px;
+    font-size: 25px;
+  }
+  .home__brand .bottom-right .brand__btn {
+    text-align: left !important;
+  }
+  .home__brand .bottom-right .brand__btn button {
+    padding: 5px 10px;
+  }
+  .video-content .gif-text {
+    top: -150px !important;
+    left: 7% !important;
+    max-width: 70% !important;
+  }
+  .video-content .gif-head {
+    font-size: 21px !important;
+    line-height: 29px !important;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .home__main-image {
+    height: 553px !important;
+  }
+  .home .centered {
+    width: 66% !important;
+  }
+  .home .centered .home-title {
+    width: 92%;
+  }
+  .home .centered .home-subtitle {
+    font-size: 15px;
+    max-width: 212px;
+    margin: 0 auto;
+    padding: 12px 0;
+  }
+  .home .centered .home-description {
+    font-size: 19px;
+  }
+  .about__main {
+    flex-wrap: wrap-reverse;
+    margin-bottom: -70px;
+  }
+  .about__main img {
+    width: 75% !important;
+  }
+  .about__main .title {
+    font-size: 34px !important;
+  }
+  .about__main .col-lg-6 {
+    text-align: center;
+  }
+  .about__main .about__content .description {
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+  .about__main button {
+    padding: 10px 65px;
+    font-size: 0.8rem;
+  }
+  .homeCenter img {
+    width: 100%;
+  }
+  .home__brand .brand__thumbnail img {
+    width: 100%;
+  }
+  .home__brand .bottom-left {
+    text-align: end;
+    width: 79%;
+    top: 34%;
+    left: 46px;
+    font-size: 25px;
+  }
+  .home__brand .bottom-left button {
+    padding: 5px 10px;
+  }
+  .home__brand .bottom-right {
+    width: 79%;
+    top: 6%;
+    left: 20px;
+    font-size: 25px;
+  }
+  .home__brand .bottom-right .brand__btn {
+    text-align: left !important;
+  }
+  .home__brand .bottom-right .brand__btn button {
+    padding: 5px 10px;
+  }
+  .video-content .gif-text {
+    top: -150px !important;
+    left: 7% !important;
+    max-width: 70% !important;
+  }
+  .video-content .gif-head {
+    font-size: 21px !important;
+    line-height: 29px !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .home__main-image {
+    height: 553px !important;
+  }
+  .home .centered {
+    width: 66% !important;
+  }
+  .home .centered .home-title {
+    width: 92%;
+  }
+  .home .centered .home-subtitle {
+    font-size: 15px;
+    max-width: 212px;
+    margin: 0 auto;
+    padding: 12px 0;
+  }
+  .home .centered .home-description {
+    font-size: 19px;
+  }
+  .about__main {
+    flex-wrap: wrap-reverse;
+    margin-bottom: -70px;
+  }
+  .about__main img {
+    width: 75% !important;
+  }
+  .about__main .title {
+    font-size: 34px !important;
+  }
+  .about__main .col-lg-6 {
+    text-align: center;
+  }
+  .about__main .about__content .description {
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+  .about__main button {
+    padding: 10px 65px;
+    font-size: 0.8rem;
+  }
+  .homeCenter img {
+    width: 49%;
+  }
+  .home__brand .brand__thumbnail img {
+    width: 100%;
+  }
+  .home__brand .bottom-left {
+    text-align: end;
+    width: 79%;
+    top: 34%;
+    left: 46px;
+    font-size: 25px;
+  }
+  .home__brand .bottom-left button {
+    padding: 5px 10px;
+  }
+  .home__brand .bottom-right {
+    width: 79%;
+    top: 6%;
+    left: 57px;
+    font-size: 25px;
+  }
+  .home__brand .bottom-right .brand__btn {
+    text-align: left !important;
+  }
+  .home__brand .bottom-right .brand__btn button {
+    padding: 5px 10px;
+  }
+  .video-content .gif-text {
+    top: -150px !important;
+    left: 7% !important;
+    max-width: 70% !important;
+  }
+  .video-content .gif-head {
+    font-size: 21px !important;
+    line-height: 29px !important;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .home__main-image {
+    height: 553px !important;
+  }
+  .home .centered {
+    width: 66% !important;
+  }
+  .home .centered .home-title {
+    width: 92%;
+  }
+  .home .centered .home-subtitle {
+    font-size: 15px;
+    max-width: 212px;
+    margin: 0 auto;
+    padding: 12px 0;
+  }
+  .home .centered .home-description {
+    font-size: 19px;
+  }
+  .about__main {
+    flex-wrap: wrap-reverse;
+    margin-bottom: -70px;
+  }
+  .about__main img {
+    width: 75% !important;
+  }
+  .about__main .title {
+    font-size: 34px !important;
+  }
+  .about__main .col-lg-6 {
+    text-align: center;
+  }
+  .about__main .about__content .description {
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+  .about__main button {
+    padding: 10px 65px;
+    font-size: 0.8rem;
+  }
+  .homeCenter img {
+    width: 29%;
+  }
+  .home__brand .brand__thumbnail img {
+    width: 100%;
+  }
+  .home__brand .bottom-left {
+    text-align: end;
+    width: 79%;
+    top: 67%;
+    left: 119px;
+    font-size: 25px;
+  }
+  .home__brand .bottom-left button {
+    padding: 5px 10px;
+  }
+  .home__brand .bottom-right {
+    width: 79%;
+    top: 6%;
+    left: 57px;
+    font-size: 25px;
+  }
+  .home__brand .bottom-right .brand__btn {
+    text-align: left !important;
+  }
+  .home__brand .bottom-right .brand__btn button {
+    padding: 5px 10px;
+  }
+  .video-content .gif-text {
+    top: -150px !important;
+    left: 7% !important;
+    max-width: 70% !important;
+  }
+  .video-content .gif-head {
+    font-size: 21px !important;
+    line-height: 29px !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__main {
+    flex-wrap: wrap-reverse;
+    margin-bottom: -70px;
+  }
+  .about__main img {
+    width: 75% !important;
+  }
+  .about__main .title {
+    font-size: 34px !important;
+  }
+  .about__main .col-lg-6 {
+    text-align: center;
+  }
+  .about__main .about__content .description {
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+  .about__main button {
+    padding: 10px 65px;
+    font-size: 0.8rem;
+  }
+  .homeCenter img {
+    width: 29%;
+  }
+  .home__brand .brand__thumbnail img {
+    width: 100%;
+  }
+  .home__brand .bottom-left {
+    text-align: end;
+    width: 79%;
+    top: 70%;
+    left: 141px;
+    font-size: 25px;
+  }
+  .home__brand .bottom-left button {
+    padding: 5px 10px;
+  }
+  .home__brand .bottom-right {
+    width: 79%;
+    top: 6%;
+    left: 57px;
+    font-size: 25px;
+  }
+  .home__brand .bottom-right .brand__btn {
+    text-align: left !important;
+  }
+  .home__brand .bottom-right .brand__btn button {
+    padding: 5px 10px;
+  }
+  .video-content .gif-text {
+    top: -150px !important;
+    left: 7% !important;
+    max-width: 70% !important;
+  }
+  .video-content .gif-head {
+    font-size: 21px !important;
+    line-height: 29px !important;
+  }
 }/*# sourceMappingURL=home.css.map */
