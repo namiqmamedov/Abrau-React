@@ -18,7 +18,7 @@ import NewsCard from '../components/UI/news-card/NewsCard'
 
 
 const Home = () => {
-    const settings = {
+  const settings = {
         infinite: true,
         centerMode: true,
         slidesToShow: 5,
@@ -56,7 +56,7 @@ const Home = () => {
               },
             },
         ],
-      };  
+  };  
   return (
     <>
     <section className='home'>

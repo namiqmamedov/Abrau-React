@@ -8,6 +8,9 @@
 
     .slick-current{
         transform: scale(1) !important;
+        .product-text{
+            display: block;
+        }
     }
 
     .slick-prev{
@@ -34,6 +37,7 @@
 
 .product-text{
     padding-top: 50px;
+    display: none;
     .product-head{
         font-family: 'Arno Pro',sans-serif;
         font-style: normal;

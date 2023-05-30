@@ -1,0 +1,135 @@
+.product__detail-index {
+  display: flex;
+  padding: 60px 0;
+}
+.product__detail-index .product-title {
+  font-size: 50px;
+  line-height: 60px;
+  color: #974D24;
+  font-family: "Arno Pro", "sans-serif";
+  margin-bottom: 10px;
+  margin-left: 10px;
+  font-weight: normal;
+}
+.product__detail-index .title {
+  font-family: "Arno Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  font-weight: bold;
+  color: #974D24;
+}
+.product__detail-index p {
+  font-family: "Mondia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #4C192A;
+}
+.product__detail-index .product__thumbnail {
+  text-align: center;
+}
+.product__detail-index .product__thumbnail img {
+  width: 23%;
+  height: 551px;
+}
+
+.product__detail {
+  background: #F4E5D4;
+}
+
+.product__about {
+  background: #F4E5D4;
+}
+.product__about .about__card-index {
+  border: 1px solid #E7D2BB;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 45px auto;
+}
+.product__about .about__card-index .about-card {
+  padding: 10px 15px;
+  width: 25%;
+  border-right: 1px solid #E7D2BB;
+}
+.product__about .about__card-index .about-card:last-child {
+  border: none;
+}
+.product__about .about__card-index .about-card .about-title {
+  font-family: "Arno Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #974D24;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.product__related .wine-card {
+  padding-top: 40px;
+  padding-bottom: 120px;
+}
+
+@media screen and (max-width: 576px) {
+  .product__detail .product__detail-index {
+    display: block;
+  }
+  .product__detail .product__detail-index .product-title {
+    font-size: 30px;
+  }
+  .product__detail .product__detail-index .product__thumbnail img {
+    height: 427px;
+  }
+  .product__about .about__card-index {
+    display: block;
+  }
+  .product__about .about__card-index .about-card {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .product__detail .product__detail-index {
+    display: block;
+  }
+  .product__detail .product__detail-index .product-title {
+    font-size: 30px;
+  }
+  .product__detail .product__detail-index .product__thumbnail img {
+    height: 427px;
+  }
+  .product__about .about__card-index {
+    display: block;
+  }
+  .product__about .about__card-index .about-card {
+    width: 100%;
+    border: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .product__detail .product__detail-index {
+    display: block;
+  }
+  .product__detail .product__detail-index .product-title {
+    font-size: 30px;
+  }
+  .product__detail .product__detail-index .product__thumbnail img {
+    width: 13%;
+    height: 457px;
+  }
+  .product__about .about__card-index {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .product__about .about__card-index .about-card {
+    width: 50%;
+    border: none;
+  }
+}/*# sourceMappingURL=product-detail.css.map */

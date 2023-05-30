@@ -8,6 +8,9 @@
 .wine-card .slick-current {
   transform: scale(1) !important;
 }
+.wine-card .slick-current .product-text {
+  display: block;
+}
 .wine-card .slick-prev {
   filter: brightness(0) saturate(100%) invert(72%) sepia(79%);
   width: 2rem;
@@ -27,6 +30,7 @@
 }
 .wine-card .product-text {
   padding-top: 50px;
+  display: none;
 }
 .wine-card .product-text .product-head {
   font-family: "Arno Pro", sans-serif;
