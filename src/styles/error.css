@@ -1,0 +1,43 @@
+.error-index {
+    background: #f4e5d4;
+}
+
+.error-index h1 {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'New York', sans-serif;
+    font-style: normal;
+    font-weight: 568;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #1F315F;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.error-index img{
+    width: 46%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.error-index button{
+    width: 28%;
+    font-family: 'Arno Pro',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #974D24;
+    border: 1px solid #974D24;
+    text-transform: none;
+}
+
+.error-index .back-home{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
