@@ -38,10 +38,10 @@ const Contact = () => {
     <section className='contact-form'>
         <div className="container">
             <div className="row">
-                <form method='POST'>
+                <form>
                     <TextField id="standard-basic" className='input-form' label="Ad" variant="standard" />
                     <TextField id="standard-basic" className='input-form' label="Soyad" variant="standard" />
-                    <TextField id="standard-basic" className='input-form' label="Email" variant="standard" />
+                    <TextField type='email' id="standard-basic" className='input-form' label="Email" variant="standard" />
                     <TextField id="standard-basic" className='input-form' label="Əlaqə" variant="standard" />
                     <TextField
                     id="outlined-multiline-static"
