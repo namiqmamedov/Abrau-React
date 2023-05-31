@@ -3,6 +3,8 @@ import contactCommon from '../assets/contact/contact-common.png'
 import '../styles/contact.css'
 import TextField from '@mui/material/TextField';
 import {Link} from 'react-router-dom'
+import Button from '@mui/material/Button';
+
 
 const Contact = () => {
   return (
@@ -36,12 +38,22 @@ const Contact = () => {
     <section className='contact-form'>
         <div className="container">
             <div className="row">
-            <form>
-                <TextField id="standard-basic" className='input-form' label="Ad" variant="standard" />
-                <TextField id="standard-basic" className='input-form' label="Soyad" variant="standard" />
-                <TextField id="standard-basic" className='input-form' label="Soyad" variant="standard" />
-                <TextField id="standard-basic" className='input-form' label="Soyad" variant="standard" />
-            </form>
+                <form method='POST'>
+                    <TextField id="standard-basic" className='input-form' label="Ad" variant="standard" />
+                    <TextField id="standard-basic" className='input-form' label="Soyad" variant="standard" />
+                    <TextField id="standard-basic" className='input-form' label="Email" variant="standard" />
+                    <TextField id="standard-basic" className='input-form' label="Əlaqə" variant="standard" />
+                    <TextField
+                    id="outlined-multiline-static"
+                    label="Məktub"
+                    className='input-form textarea'
+                    multiline
+                    rows={4}
+                    />
+                    <div className="submit-btn">
+                        <Button type='submit' variant="outlined">Göndər</Button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
