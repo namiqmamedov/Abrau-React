@@ -31,13 +31,92 @@
     font-size: 20px;
     line-height: 24px;
     text-align: center;
+    border: none !important;
     color: #974D24;
     border: 1px solid #974D24;
     text-transform: none;
+    transition: .5s ease-in-out;
 }
 
 .error-index .back-home{
     padding-top: 40px;
     padding-bottom: 40px;
     text-align: center;
+}
+
+.error-index button:hover{
+    background: #974D24;
+    color: white;
+}
+
+@media screen and (max-width: 576px) 
+{
+    .error-index h1{
+        font-size: 18px;
+    }
+    .error-index img{
+        width: 70%;
+        max-width: 100%;
+    }
+    .error-index button{
+        width: 50%;
+        font-size: 1rem;
+    }    
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) 
+{
+    .error-index h1{
+        font-size: 20px;
+    }
+    .error-index img{
+        width: 80%;
+    }
+    .error-index button{
+        width: 50%;
+        font-size: 1rem;
+    }    
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) 
+{
+    .error-index h1{
+        font-size: 24px;
+    }
+    .error-index img{
+        width: 60%;
+    }
+    .error-index button{
+        width: 30%;
+        font-size: 1rem;
+    }    
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) 
+{
+    .error-index h1{
+        font-size: 26px;
+    }
+    .error-index img{
+        width: 70%;
+    }
+    .error-index button{
+        width: 30%;
+        font-size: 1rem;
+    }    
+}
+
+
+@media screen and (min-width: 1200px) 
+{
+    .error-index h1{
+        font-size: 26px;
+    }
+    .error-index img{
+        width: 60%;
+    }
+    .error-index button{
+        width: 30%;
+        font-size: 1rem;
+    }    
 }
