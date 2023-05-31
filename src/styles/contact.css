@@ -19,6 +19,13 @@
   font-family: "gerald-regular", "sans-serif";
 }
 
+.breadcrumb__index {
+  background: #f4e5d4;
+}
+.breadcrumb__index .breadcrumb__item {
+  padding: 20px 0;
+}
+
 .contact-card {
   background: #F4E5D4;
   padding-bottom: 40px;
@@ -107,6 +114,9 @@
 }
 .contact-form .css-1x51dt5-MuiInputBase-input-MuiInput-input {
   padding-left: 10px !important;
+}
+.contact-form .css-1x51dt5-MuiInputBase-input-MuiInput-input::after {
+  content: "";
 }
 
 @media screen and (max-width: 576px) {

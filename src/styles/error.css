@@ -31,7 +31,6 @@
     font-size: 20px;
     line-height: 24px;
     text-align: center;
-    border: none !important;
     color: #974D24;
     border: 1px solid #974D24;
     text-transform: none;
@@ -47,6 +46,7 @@
 .error-index button:hover{
     background: #974D24;
     color: white;
+    border: 1px solid #974D24;
 }
 
 @media screen and (max-width: 576px) 

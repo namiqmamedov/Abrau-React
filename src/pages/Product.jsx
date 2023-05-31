@@ -15,7 +15,8 @@ const Product = () => {
         <h1 className="centered">Məhsullar
         </h1>
     </section> 
-    <div className = "breadcrumb__index" > <div className="container">
+    <div className="breadcrumb__index">
+         <div className="container">
         <div className="row">
             <Breadcrumbs className='breadcrumb__item' aria-label="breadcrumb">
                 <Link color="text.primary" underline="hover" to='/'>
@@ -29,9 +30,9 @@ const Product = () => {
                 </Link>
             </Breadcrumbs>
         </div>
-    </div> </div>
-
-        <section className='product'>
+    </div>
+     </div>
+    <section className='product'>
             <div className="container">
                 <div className="row">
                     <div className="product__main-item">
@@ -53,8 +54,8 @@ const Product = () => {
                     </div>
                  </div>
                   </div> 
-                 </section> 
-                 </>)
+     </section> 
+     </>)
 }
 
 export default Product

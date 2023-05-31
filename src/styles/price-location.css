@@ -1,0 +1,60 @@
+.map__main {
+  background: #F4E5D4;
+  display: flex;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.map__main ::-webkit-scrollbar {
+  width: 5px;
+}
+.map__main ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 20px #E7D2BB;
+  border-radius: 10px;
+}
+.map__main ::-webkit-scrollbar-thumb {
+  background: #888;
+  height: 50% !important;
+}
+.map__main ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.map__main .col-lg-4 {
+  max-height: 489px;
+  overflow-y: scroll;
+}
+.map__main .location-card {
+  border-top: 1px solid #E7D2BB;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.map__main .location-card .title {
+  font-family: "Arno Pro", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 25px;
+  color: #974D24;
+}
+.map__main .location-card .text {
+  font-family: "Mondia", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4C192A;
+}
+.map__main .location-card .phone {
+  font-family: "Legan", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #4C192A;
+}
+.map__main .location-card .location-btn {
+  text-decoration: underline !important;
+  color: black;
+  width: 70%;
+  text-align: end;
+}/*# sourceMappingURL=price-location.css.map */

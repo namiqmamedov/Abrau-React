@@ -20,6 +20,13 @@
     }
 }
 
+.breadcrumb__index {
+    background: #f4e5d4;
+
+    .breadcrumb__item {
+        padding: 20px 0;
+    }
+}
 
 .contact-card {
     background: #F4E5D4;
@@ -122,6 +129,10 @@
 
     .css-1x51dt5-MuiInputBase-input-MuiInput-input {
         padding-left: 10px !important;
+
+        &::after{
+            content: "";
+        }
     }
 }
 

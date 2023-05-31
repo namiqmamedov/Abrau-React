@@ -5,6 +5,7 @@ import Product from '../pages/Product'
 import ProductDetails from '../pages/ProductDetails'
 import Error from '../pages/Error'
 import Contact from '../pages/Contact'
+import PriceLocation from '../pages/PriceLocation'
 
 
 const Routers = () => {
@@ -15,6 +16,7 @@ const Routers = () => {
         <Route path='/product' element={<Product />}/>
         <Route path='/detail' element={<ProductDetails />}/>
         <Route path='/contact' element={<Contact />}/>
+        <Route path='/price-location' element={<PriceLocation />}/>
         <Route path='*' element={<Error />}/>
     </Routes>
   )

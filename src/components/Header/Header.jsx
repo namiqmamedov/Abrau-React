@@ -28,8 +28,8 @@ function Header() {
           <Nav className="mx-auto main-nav">
             <Link to='about'>HAQQIMIZDA</Link>
             <Link to="product">MƏHSULLAR</Link>
-            <Link to="news">SATIŞ NÖQTƏLƏRI</Link>
-            <Link to="price-location">XƏBƏRLƏR</Link>
+            <Link to="price-location">SATIŞ NÖQTƏLƏRI</Link>
+            <Link to="news">XƏBƏRLƏR</Link>
             <Link to="contact">ƏLAQƏ</Link>
           </Nav>
           <Nav>

@@ -2,9 +2,10 @@ import React from 'react'
 import contactCommon from '../assets/contact/contact-common.png'
 import '../styles/contact.css'
 import TextField from '@mui/material/TextField';
+import BreadLink from '@mui/material/Link';
 import {Link} from 'react-router-dom'
 import Button from '@mui/material/Button';
-
+import Breadcrumbs from '@mui/material/Breadcrumbs';
 
 const Contact = () => {
   return (
@@ -15,6 +16,23 @@ const Contact = () => {
         <h1 className="centered">ƏLAQƏ
         </h1>
     </section> 
+    <div className="breadcrumb__index">
+         <div className="container">
+        <div className="row">
+            <Breadcrumbs className='breadcrumb__item' aria-label="breadcrumb">
+                <BreadLink color="text.primary" underline="hover" to='/'>
+                    Ana Səhifə
+                </BreadLink>
+                <BreadLink
+                    underline="hover"
+                    color="inherit"
+                    href="/material-ui/getting-started/installation/">
+                    Məhsullar
+                </BreadLink>
+            </Breadcrumbs>
+        </div>
+    </div>
+     </div>
     <section className='contact-card'> 
         <div className="container">
             <div className="row">
