@@ -8,13 +8,14 @@ import productData from '../data/product';
 
 
 const Product = () => {
-    return ( <> <section className='common-section'>
+    return ( <>
+    <section className='common-section'>
+        <div className="background-img"></div>
+        <img src={productCommon} alt="Common Image"/>
         <h1 className="centered">Məhsullar
         </h1>
-        <img src={productCommon} alt="Common Image"/>
-        <div className="background-img"></div>
-
-    </section> < div className = "breadcrumb__index" > <div className="container">
+    </section> 
+    <div className = "breadcrumb__index" > <div className="container">
         <div className="row">
             <Breadcrumbs className='breadcrumb__item' aria-label="breadcrumb">
                 <Link color="text.primary" underline="hover" to='/'>
