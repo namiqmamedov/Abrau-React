@@ -159,18 +159,6 @@ const Home = () => {
         </div>
     </section>
 
-    {/* <section className='news-index'>
-    <div className="container">
-        <div className="row">
-            <div className="news-main"> */}
-            {/* {newsData.map((news,index)=>(
-                <NewsCard key={index} item={news}/>
-             ))} */}
-            {/* </div>
-        </div>
-    </div>
-    </section> */}
-
     <NewsCard/>
     </>
   )

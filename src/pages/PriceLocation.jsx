@@ -33,71 +33,74 @@ const PriceLocation = () => {
             <div className="map__main">
                 <div className="container">
                     <div className="row">
-                    <div className="col-lg-4">
+                    <h2 className="page-head">
+                Sizə ən yaxın mağazanı seçin 
+            </h2>
+                    <div className="col-lg-4 col-12">
                         <div className="wrapper">
-                    <div class="location-card">
-                            <h4 class="title">
+                    <div className="location-card">
+                            <h4 className="title">
                                 Gənclik Mall
                             </h4 > 
-                            <p class="text">
+                            <p className="text">
                                 Nərimanov rayonu, Fətəli Xan Xoyski küçəsi, Gənclik Mall, 1-ci mərtəbə
                             </p> 
-                            <a class = "phone" href = "tel:" > (012)404 27 16 </a>
-                            <a class="phone" href="tel:">
+                            <a className = "phone" href = "tel:" > (012)404 27 16 </a>
+                            <a className="phone" href="tel:">
                                  
                             </a> 
-                            <a class="location-btn">
+                            <a className="location-btn">
                                 Xəritədə bax
                             </a>
                     </div>
-                    <div class="location-card">
-                            <h4 class="title">
-                                Gənclik Mall
+                    <div className="location-card">
+                            <h4 className="title">
+                            Əhmədli qəsəbəsi
                             </h4 > 
-                            <p class="text">
-                                Nərimanov rayonu, Fətəli Xan Xoyski küçəsi, Gənclik Mall, 1-ci mərtəbə
+                            <p className="text">
+                            Xətai rayonu, Əhmədli qəsəbəsi, Ramiz Quliyev küçəsi 4
                             </p> 
-                            <a class = "phone" href = "tel:" > (012)404 27 16 </a>
-                            <a class="phone" href="tel:">
+                            <a className = "phone" href = "tel:" > (012)404 27 16 </a>
+                            <a className="phone" href="tel:">
                                  
                             </a> 
-                            <a class="location-btn">
+                            <a className="location-btn">
                                 Xəritədə bax
                             </a>
                     </div>
-                    <div class="location-card">
-                            <h4 class="title">
-                                Gənclik Mall
+                    <div className="location-card">
+                            <h4 className="title">
+                            Xaqani küçəsi
                             </h4 > 
-                            <p class="text">
-                                Nərimanov rayonu, Fətəli Xan Xoyski küçəsi, Gənclik Mall, 1-ci mərtəbə
+                            <p className="text">
+                                Səbail rayonu, Xəqani küçəsi 26/32
                             </p> 
-                            <a class = "phone" href = "tel:" > (012)404 27 16 </a>
-                            <a class="phone" href="tel:">
+                            <a className= "phone" href = "tel:" > (012)404 27 16 </a>
+                            <a className="phone" href="tel:">
                                  
                             </a> 
-                            <a class="location-btn">
+                            <a className="location-btn">
                                 Xəritədə bax
                             </a>
                     </div>
-                    <div class="location-card">
-                            <h4 class="title">
-                                Gənclik Mall
+                    <div className="location-card">
+                            <h4 className="title">
+                            Gəncə Mall
                             </h4 > 
-                            <p class="text">
-                                Nərimanov rayonu, Fətəli Xan Xoyski küçəsi, Gənclik Mall, 1-ci mərtəbə
+                            <p className="text">
+                            Gəncə şəhəri, Heydər Əliyev prospekti 433, Gəncə Mall 1-ci mərtəbə
                             </p> 
-                            <a class = "phone" href = "tel:" > (012)404 27 16 </a>
-                            <a class="phone" href="tel:">
+                            <a className = "phone" href = "tel:" > (012)404 27 16 </a>
+                            <a className="phone" href="tel:">
                                  
                             </a> 
-                            <a class="location-btn">
+                            <a className="location-btn">
                                 Xəritədə bax
                             </a>
                     </div>
                     </div>
             </div >
-        <div className="col-lg-6">
+        <div className="col-lg-6 col-12">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3029.878309105938!2d50.05548857526423!3d40.588441445171746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4030f13f51469869%3A0x5aaa3c5fe5f01d96!2sAmburan%20Mall!5e0!3m2!1sen!2saz!4v1685529014448!5m2!1sen!2saz"
             width="850"
@@ -108,7 +111,8 @@ const PriceLocation = () => {
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div> </div>
+            </div> 
+            </div>
                 </div> 
             </div> 
             </>

@@ -6,6 +6,8 @@ import ProductDetails from '../pages/ProductDetails'
 import Error from '../pages/Error'
 import Contact from '../pages/Contact'
 import PriceLocation from '../pages/PriceLocation'
+import News from '../pages/News'
+import NewsDetails from '../pages/NewsDetails'
 
 
 const Routers = () => {
@@ -17,6 +19,8 @@ const Routers = () => {
         <Route path='/detail' element={<ProductDetails />}/>
         <Route path='/contact' element={<Contact />}/>
         <Route path='/price-location' element={<PriceLocation />}/>
+        <Route path='/news' element={<News />}/>
+        <Route path='/news-detail' element={<NewsDetails />}/>
         <Route path='*' element={<Error />}/>
     </Routes>
   )

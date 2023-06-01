@@ -16,7 +16,7 @@
 }
 #navbar .navbar-nav {
   align-items: center;
-  gap: 1.8rem;
+  gap: 4.2rem;
 }
 #navbar .navbar-nav a {
   transition: 0.4s ease-in-out;

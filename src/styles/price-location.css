@@ -5,6 +5,9 @@
   /* Handle */
   /* Handle on hover */
 }
+.map__main .page-head {
+  display: none;
+}
 .map__main ::-webkit-scrollbar {
   width: 5px;
 }
@@ -55,6 +58,96 @@
 .map__main .location-card .location-btn {
   text-decoration: underline !important;
   color: black;
-  width: 70%;
+  display: block;
+  width: 100%;
   text-align: end;
+}
+
+@media screen and (max-width: 576px) {
+  .map__main .page-head {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: rgb(220, 148, 108);
+    width: 100%;
+    font-size: 32px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    font-weight: bold;
+    font-family: "arno-pro-regular", "sans-serif";
+  }
+  .map__main .title {
+    font-size: 18px !important;
+  }
+  .map__main .text {
+    font-size: 14px !important;
+  }
+  .map__main iframe {
+    width: 100%;
+    height: 500px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .map__main .page-head {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: rgb(220, 148, 108);
+    width: 100%;
+    font-size: 32px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    font-weight: bold;
+    font-family: "arno-pro-regular", "sans-serif";
+  }
+  .map__main .title {
+    font-size: 18px !important;
+  }
+  .map__main .text {
+    font-size: 14px !important;
+  }
+  .map__main iframe {
+    width: 100%;
+    height: 500px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .map__main .page-head {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: rgb(220, 148, 108);
+    width: 100%;
+    font-size: 32px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    font-weight: bold;
+    font-family: "arno-pro-regular", "sans-serif";
+  }
+  .map__main .title {
+    font-size: 18px !important;
+  }
+  .map__main .text {
+    font-size: 14px !important;
+  }
+  .map__main iframe {
+    width: 100%;
+    height: 500px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .map__main iframe {
+    width: 645px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .map__main iframe {
+    width: 850px;
+  }
 }/*# sourceMappingURL=price-location.css.map */
