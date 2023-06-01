@@ -103,13 +103,13 @@
             flex-direction: column;
             position: relative;
 
-            &:nth-child(3n){
-                .right__border{
+            &:nth-child(3n) {
+                .right__border {
                     display: none;
                 }
-        }
-    
-            .right__border{
+            }
+
+            .right__border {
                 position: absolute;
                 border: 1px solid #E7D2BB;
                 width: 600px;
@@ -118,13 +118,13 @@
                 left: 1%;
                 right: 0;
             }
-            
 
-            .product-text{
+
+            .product-text {
                 padding-top: 30px;
             }
 
-            img{
+            img {
                 width: 33%;
                 height: 407px;
                 margin: 0 auto;
@@ -132,18 +132,18 @@
                 transform: scale(1);
                 transition: .5s ease-in-out;
 
-                &:hover{
+                &:hover {
                     transform: scale(1.1);
                 }
             }
 
-            .product__btn{
+            .product__btn {
                 text-align: center;
                 padding-top: 25px;
                 padding-bottom: 25px;
                 border-bottom: 1px solid #E7D2BB;
 
-                button{
+                button {
                     border: 1px solid #974D24;
                     color: #974D24;
                     text-transform: none;
@@ -157,7 +157,7 @@
                     transition: .3s ease-in-out;
 
 
-                    &:hover{
+                    &:hover {
                         color: white;
                         background: #974D24;
                     }
@@ -187,304 +187,317 @@
     }
 }
 
-@media screen and (max-width: 576px)
-{
+@media screen and (max-width: 576px) {
 
-    .breadcrumb__index{
-        .breadcrumb__item{
+    .breadcrumb__index {
+        .breadcrumb__item {
             padding-left: 15px;
-            .MuiBreadcrumbs-li{
-                a{
+
+            .MuiBreadcrumbs-li {
+                a {
                     font-size: 13px;
                 }
             }
         }
     }
 
-    .common-section{
-        .centered{
+    .common-section {
+        .centered {
             top: 27%;
             font-size: 35px;
             text-transform: none !important;
         }
 
-        img{
+        img {
             height: 200px;
         }
     }
 
-    .product{
+    .product {
         padding-top: 25px;
-        .product__list-item{
-            .right__border{
+
+        .product__list-item {
+            .right__border {
                 display: none;
-            }    
-            .card-index{
+            }
+
+            .card-index {
                 width: 100% !important;
 
-                img{
+                img {
                     width: 18%;
                     height: 263px;
                 }
             }
         }
 
-        .accordion__main{
+        .accordion__main {
             border-top: 1px solid #E7D2BB;
         }
 
-        .filter__index{
+        .filter__index {
             border-bottom: 1px solid #E7D2BB;
             border-right: 0px;
-            .MuiAccordionSummary-content{
+
+            .MuiAccordionSummary-content {
                 border: none !important;
             }
         }
     }
 }
 
-@media screen and (min-width: 576px) and (max-width: 768px)
-{
+@media screen and (min-width: 576px) and (max-width: 768px) {
 
-    .breadcrumb__index{
-        .breadcrumb__item{
+    .breadcrumb__index {
+        .breadcrumb__item {
             padding-left: 15px;
-            .MuiBreadcrumbs-li{
-                a{
+
+            .MuiBreadcrumbs-li {
+                a {
                     font-size: 13px;
                 }
             }
         }
     }
 
-    .common-section{
-        .centered{
+    .common-section {
+        .centered {
             top: 27%;
             font-size: 35px;
             text-transform: none !important;
         }
 
-        img{
+        img {
             height: 200px;
         }
     }
 
-    .product{
+    .product {
         padding-top: 25px;
-        .product__list-item{
-            .right__border{
+
+        .product__list-item {
+            .right__border {
                 display: none;
-            }    
-            .card-index{
+            }
+
+            .card-index {
                 width: 100% !important;
 
-                img{
+                img {
                     width: 18%;
                     height: 263px;
                 }
             }
         }
 
-        .accordion__main{
+        .accordion__main {
             border-top: 1px solid #E7D2BB;
         }
 
-        .filter__index{
+        .filter__index {
             border-bottom: 1px solid #E7D2BB;
             border-right: 0px;
-            .MuiAccordionSummary-content{
+
+            .MuiAccordionSummary-content {
                 border: none !important;
             }
         }
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px)
-{
-    .breadcrumb__index{
-        .breadcrumb__item{
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .breadcrumb__index {
+        .breadcrumb__item {
             padding-left: 15px;
-            .MuiBreadcrumbs-li{
-                a{
+
+            .MuiBreadcrumbs-li {
+                a {
                     font-size: 16px;
                 }
             }
         }
     }
 
-    .common-section{
-        .centered{
+    .common-section {
+        .centered {
             top: 27%;
             font-size: 35px;
             text-transform: none !important;
         }
 
-        img{
+        img {
             height: 200px;
         }
     }
 
-    .product{
+    .product {
         padding-top: 25px;
 
-        .product__main-item{
+        .product__main-item {
             display: flex;
         }
 
-        .product__list-item{
-            .right__border{
+        .product__list-item {
+            .right__border {
                 display: none;
-            }    
-            .card-index{
+            }
+
+            .card-index {
                 width: 33% !important;
 
-                img{
+                img {
                     width: 51%;
-                height: 338px;
+                    height: 338px;
                 }
             }
         }
 
-        .accordion__main{
+        .accordion__main {
             border-top: 1px solid #E7D2BB;
         }
 
-        .filter__index{
+        .filter__index {
             border-bottom: 1px solid #E7D2BB;
             border-right: 0px;
-            .MuiAccordionSummary-content{
+
+            .MuiAccordionSummary-content {
                 border: none !important;
             }
         }
     }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px)
-{
-    .breadcrumb__index{
-        .breadcrumb__item{
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .breadcrumb__index {
+        .breadcrumb__item {
             padding-left: 15px;
-            .MuiBreadcrumbs-li{
-                a{
+
+            .MuiBreadcrumbs-li {
+                a {
                     font-size: 16px;
                 }
             }
         }
     }
 
-    .common-section{
-        .centered{
+    .common-section {
+        .centered {
             top: 27%;
             font-size: 35px;
             text-transform: none !important;
         }
 
-        img{
+        img {
             height: 200px;
         }
     }
 
-    .product{
+    .product {
         padding-top: 25px;
 
-        .product__main-item{
+        .product__main-item {
             display: flex;
         }
 
-        .product__list-item{
-            .right__border{
+        .product__list-item {
+            .right__border {
                 display: none;
-            }    
-            .card-index{
+            }
+
+            .card-index {
                 width: 33% !important;
 
-                img{
+                img {
                     width: 43%;
                     height: 367px;
                 }
             }
         }
 
-        .accordion__main{
+        .accordion__main {
             border-top: 1px solid #E7D2BB;
         }
 
-        .filter__index{
+        .filter__index {
             border-bottom: 1px solid #E7D2BB;
             border-right: 0px;
-            .MuiAccordionSummary-content{
+
+            .MuiAccordionSummary-content {
                 border: none !important;
             }
         }
     }
 }
 
-@media screen and (min-width: 1200px) 
-{
-    .breadcrumb__index{
-        .breadcrumb__item{
+@media screen and (min-width: 1200px) {
+    .breadcrumb__index {
+        .breadcrumb__item {
             padding-left: 15px;
-            .MuiBreadcrumbs-li{
-                a{
+
+            .MuiBreadcrumbs-li {
+                a {
                     font-size: 16px;
                 }
             }
         }
     }
 
-    .common-section{
+    .common-section {
         position: relative;
-        .centered{
+
+        .centered {
             top: 27%;
             font-size: 65px;
             text-transform: none !important;
         }
 
-        .background-img{
+        .background-img {
             position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-    opacity: 1;
-    transition: 0.5s all ease-in-out;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+            opacity: 1;
+            transition: 0.5s all ease-in-out;
         }
 
-        img{
+        img {
             height: 453px;
         }
     }
 
-    .product{
+    .product {
         padding-top: 25px;
 
-        .product__main-item{
+        .product__main-item {
             display: flex;
         }
 
-        .product__list-item{
-            .right__border{
+        .product__list-item {
+            .right__border {
                 display: none;
-            }    
-            .card-index{
+            }
+
+            .card-index {
                 width: 33% !important;
 
-                img{
+                img {
                     width: 33%;
                     height: 367px;
                 }
             }
         }
 
-        .accordion__main{
+        .accordion__main {
             border-top: 1px solid #E7D2BB;
         }
 
-        .filter__index{
+        .filter__index {
             border-bottom: 1px solid #E7D2BB;
             border-right: 0px;
-            .MuiAccordionSummary-content{
+
+            .MuiAccordionSummary-content {
                 border: none !important;
             }
         }

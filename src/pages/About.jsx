@@ -1,33 +1,46 @@
 import React from 'react'
+import aboutImage from '../assets/about/about-img.webp'
+import Box from '@mui/material/Box';
+import Modal from '@mui/material/Modal';
+import {AiOutlineClose} from 'react-icons/ai'
+import '../styles/about.css'
 
-// import styles
-import 'lightgallery/css/lightgallery.css';
-import 'lightgallery/css/lg-zoom.css';
-import 'lightgallery/css/lg-thumbnail.css';
-import 'lightgallery/css/lightgallery.css';
-import 'lightgallery/css/lg-zoom.css';
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+};
 
-import LightGallery from 'lightgallery/react/Lightgallery.es5';
+const About = () => {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
-import lgThumbnail from 'lightgallery/plugins/thumbnail';
-import Zoom from 'lightgallery/plugins/zoom';
-
-
-
-function About() {
   return (
+    
    <div className='about-main'>
-     <LightGallery
-                speed={500}
-                plugins={[lgThumbnail, Zoom]}
-            >
-                <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Google_Images_2015_logo.svg/1200px-Google_Images_2015_logo.svg.png">
-                    <img alt="img1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Google_Images_2015_logo.svg/1200px-Google_Images_2015_logo.svg.png" />
-                </a>
-                <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Google_Images_2015_logo.svg/1200px-Google_Images_2015_logo.svg.png">
-                    <img alt="img2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Google_Images_2015_logo.svg/1200px-Google_Images_2015_logo.svg.png" />
-                </a>
-    </LightGallery>
+      <div className="thumbnail-about">
+      <img onClick={handleOpen} src={aboutImage} alt="About Image" />
+      <Modal
+      className='modal-box'
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style}>
+        <AiOutlineClose onClick={handleClose} className='close-box'/>
+        <iframe width="1130" height="635" src="https://www.youtube.com/embed/1_4Rr5pP2wQ"
+         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+         clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+         allowfullscreen></iframe>
+        </Box>
+      </Modal>
+      </div>
+      <div className="bg-list">
+      <div className="background-img"></div>
+      </div>
    </div>
   )
 }
