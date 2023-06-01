@@ -118,7 +118,7 @@ const Home = () => {
     <section className='home__video'>
         <div className="container">
             <div className="row">
-            <video width="100%" height="100%" controls muted
+            <video width="100%" height="100%" loop controls muted
             autoPlay={"autoplay"} >
             <source src={HomeGif} type="video/mp4"/>
             </video>

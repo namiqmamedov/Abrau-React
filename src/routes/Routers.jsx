@@ -8,6 +8,7 @@ import Contact from '../pages/Contact'
 import PriceLocation from '../pages/PriceLocation'
 import News from '../pages/News'
 import NewsDetails from '../pages/NewsDetails'
+import About from '../pages/About'
 
 
 const Routers = () => {
@@ -21,6 +22,7 @@ const Routers = () => {
         <Route path='/price-location' element={<PriceLocation />}/>
         <Route path='/news' element={<News />}/>
         <Route path='/news-detail' element={<NewsDetails />}/>
+        <Route path='/about' element={<About />}/>
         <Route path='*' element={<Error />}/>
     </Routes>
   )
