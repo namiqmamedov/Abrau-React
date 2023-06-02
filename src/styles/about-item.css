@@ -1,12 +1,50 @@
 .about__item {
   background: #F4E5D4;
+  position: relative;
+  overflow: hidden;
+}
+.about__item .indicator-item {
+  position: absolute;
+  transform: rotate(90deg);
+  top: 28.7%;
+  left: -33.5%;
+  right: 0;
+  bottom: 0;
+}
+.about__item .indicator-item-second {
+  position: absolute;
+  top: 36%;
+  right: -13%;
+  bottom: 0;
+}
+.about__item .indicator-item-third {
+  position: absolute;
+  top: 64.8%;
+  right: -29%;
+  bottom: 0;
+  transform: rotate(90deg);
+  z-index: 1;
+}
+.about__item .indicator-item-fourth {
+  position: absolute;
+  top: 68.2%;
+  right: -21.9%;
+  bottom: 0;
+}
+.about__item .indicator-item-fifth {
+  position: absolute;
+  top: 97%;
+  right: 35.1%;
+  bottom: 0;
+  transform: rotate(90deg);
 }
 .about__item .about__item-wrapper {
-  padding: 80px 0;
+  padding: 145px 0;
   display: flex;
 }
 .about__item .about__item-wrapper .about__item-text {
   position: relative;
+  padding-left: 20px;
 }
 .about__item .about__item-wrapper .about__item-text h4 {
   font-family: "Arno Pro", sans-serif;

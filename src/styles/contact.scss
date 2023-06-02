@@ -20,13 +20,6 @@
     }
 }
 
-.breadcrumb__index {
-    background: #f4e5d4;
-
-    .breadcrumb__item {
-        padding: 20px 0;
-    }
-}
 
 .contact-card {
     background: #F4E5D4;
@@ -138,18 +131,6 @@
 
 @media screen and (max-width: 576px) {
 
-    .breadcrumb__index {
-        .breadcrumb__item {
-            padding-left: 15px;
-
-            .MuiBreadcrumbs-li {
-                a {
-                    font-size: 13px;
-                }
-            }
-        }
-    }
-
     .common-section {
         .centered {
             top: 27%;
@@ -190,18 +171,6 @@
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
 
-    .breadcrumb__index {
-        .breadcrumb__item {
-            padding-left: 15px;
-
-            .MuiBreadcrumbs-li {
-                a {
-                    font-size: 13px;
-                }
-            }
-        }
-    }
-
     .common-section {
         .centered {
             top: 27%;
@@ -241,18 +210,6 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    .breadcrumb__index {
-        .breadcrumb__item {
-            padding-left: 15px;
-
-            .MuiBreadcrumbs-li {
-                a {
-                    font-size: 16px;
-                }
-            }
-        }
-    }
-
     .common-section {
         .centered {
             top: 27%;
@@ -290,18 +247,6 @@
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
 
-    .breadcrumb__index {
-        .breadcrumb__item {
-            padding-left: 15px;
-
-            .MuiBreadcrumbs-li {
-                a {
-                    font-size: 16px;
-                }
-            }
-        }
-    }
-
     .common-section {
         .centered {
             top: 27%;
@@ -334,17 +279,6 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .breadcrumb__index {
-        .breadcrumb__item {
-            padding-left: 15px;
-
-            .MuiBreadcrumbs-li {
-                a {
-                    font-size: 16px;
-                }
-            }
-        }
-    }
 
     .common-section {
         position: relative;

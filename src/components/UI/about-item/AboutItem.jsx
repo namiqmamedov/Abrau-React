@@ -3,12 +3,32 @@ import '../../../styles/about-item.css'
 import card01 from '../../../assets/about/aboutCard01.webp'
 import card02 from '../../../assets/about/aboutCard02.webp'
 import card03 from '../../../assets/about/aboutCard02.webp'
+import ScrollIndicator from '../scroll-indicator/ScrollIndicator'
+import Breadcrumbs from '@mui/material/Breadcrumbs';
+import Link from '@mui/material/Link';
 
 const AboutItem = () => {
   return (
-    <div className="about__item">
+      <div className="about__item">
         <div className="container">
             <div className="row">
+            <div className="breadcrumb__index">
+         <div className="container">
+        <div className="row">
+            <Breadcrumbs className='breadcrumb__item' aria-label="breadcrumb">
+                <Link color="text.primary" underline="hover" to='/'>
+                    Ana Səhifə
+                </Link>
+                <Link
+                    underline="hover"
+                    color="inherit">
+                    Haqqımızda
+                </Link>
+            </Breadcrumbs>
+        </div>
+    </div>
+             </div>
+                <ScrollIndicator className="indicator-main" color="#DDC6AE;" />
                 <div className="about__item-wrapper">
                     <div className="col-lg-4">
                         <div className="about__item-text">
@@ -31,6 +51,8 @@ const AboutItem = () => {
                         </div>
                     </div>
                 </div>
+                <ScrollIndicator className="indicator-main" color="#DDC6AE;" />
+                <ScrollIndicator className="indicator-main" color="#DDC6AE;" />
                 <div className="about__item-wrapper">
                     <div className="col-lg-4">
                         <div className="about__item-text">
@@ -50,6 +72,7 @@ const AboutItem = () => {
                         </div>
                     </div>
                 </div>
+                <ScrollIndicator className="indicator-main" color="#DDC6AE;" />
                 <div className="about__item-wrapper">
                     <div className="col-lg-4">
                         <div className="about__item-text">
