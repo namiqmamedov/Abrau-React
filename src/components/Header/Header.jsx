@@ -8,7 +8,7 @@ import {AiOutlineGlobal} from 'react-icons/ai'
 import {BsSearch} from 'react-icons/bs'
 import {FaFacebookF} from 'react-icons/fa'
 import {FaInstagram} from 'react-icons/fa'
-import {Link} from 'react-router-dom'
+import {Link,NavLink} from 'react-router-dom'
 import '../../styles/header.css'
 
 function Header() {
@@ -26,11 +26,11 @@ function Header() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mx-auto main-nav">
-            <Link to='about'>HAQQIMIZDA</Link>
-            <Link to="product">MƏHSULLAR</Link>
-            <Link to="price-location">SATIŞ NÖQTƏLƏRI</Link>
-            <Link to="news">XƏBƏRLƏR</Link>
-            <Link to="contact">ƏLAQƏ</Link>
+            <NavLink ClassName={'active'}  to='about'>HAQQIMIZDA</NavLink>
+            <NavLink ClassName={'active'} to="product">MƏHSULLAR</NavLink>
+            <NavLink ClassName={'active'} to="price-location">SATIŞ NÖQTƏLƏRI</NavLink>
+            <NavLink ClassName={'active'} to="news">XƏBƏRLƏR</NavLink>
+            <NavLink ClassName={'active'} to="contact">ƏLAQƏ</NavLink>
           </Nav>
           <Nav>
            <div className="search-index">

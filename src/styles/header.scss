@@ -8,6 +8,10 @@
     bottom: 0;
     z-index: 11111;
 
+    .active{
+        color: #EF9700 !important;
+    }
+
     .main-nav {
         a {
             color: white;

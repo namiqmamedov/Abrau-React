@@ -8,6 +8,9 @@
   bottom: 0;
   z-index: 11111;
 }
+#navbar .active {
+  color: #EF9700 !important;
+}
 #navbar .main-nav a {
   color: white;
 }
