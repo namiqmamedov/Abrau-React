@@ -7,12 +7,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {GrNext} from 'react-icons/gr'
 import {GrPrevious} from 'react-icons/gr'
-import WineCard from './UI/wine-card/WineCard';
 import aboutImg01 from '../assets/product/detail/about01.svg'
 import aboutImg02 from '../assets/product/detail/about02.svg'
 import aboutImg03 from '../assets/product/detail/about03.svg'
 import aboutImg04 from '../assets/product/detail/about04.svg'
 import '../styles/wine-card.css'
+import WineCard from '../components/UI/wine-card/WineCard';
 
 const aboutCard = [
     {

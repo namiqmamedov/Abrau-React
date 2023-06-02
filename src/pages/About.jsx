@@ -7,8 +7,9 @@ import {AiOutlineClose} from 'react-icons/ai'
 import aboutImage from '../assets/about/about-img.webp'
 import playBtn from '../assets/about/video-play.svg'
 import '../styles/about.css'
-import AboutItem from './UI/about-item/AboutItem';
-import AboutSlider from './UI/about-slider/aboutSlider';
+import AboutItem from '../components/UI/about-item/AboutItem';
+import AboutSlider from '../components/UI/about-slider/AboutSlider';
+import AboutAwards from '../components/UI/about-award/AboutAwards';
 
 const style = {
     position: 'absolute',
@@ -77,6 +78,8 @@ const About = () => {
               <AboutItem/>
 
               <AboutSlider/>
+
+              <AboutAwards/>
      </>
   )
   

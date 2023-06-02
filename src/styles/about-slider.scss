@@ -1,0 +1,41 @@
+.about__slider {
+    background: #F4E5D4;
+
+    .about-head {
+        font-weight: 400;
+        font-size: 55px;
+        line-height: 66px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #E60E07;
+        font-family: 'arno-pro-regular', 'sans-serif';
+    }
+
+    .about__item-order {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.3rem;
+
+        .item-wrapper {
+            img {
+                margin: 0 auto;
+                display: flex;
+                width: 80px;
+                height: 80px;
+            }
+
+            p {
+                text-align: center;
+                font-size: 14px;
+                line-height: 20px;
+                color: #130F02;
+                /* font-family: 'legan','sans-serif' !important; */
+                font-family: 'futura-regular', 'sans-serif';
+                font-weight: 300;
+                margin-top: 10px;
+                max-width: 200px;
+            }
+        }
+    }
+}

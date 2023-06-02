@@ -1,0 +1,60 @@
+.about__award {
+  background: #F4E5D4;
+}
+.about__award .about__award-index {
+  margin-top: 90px;
+  margin-bottom: 140px;
+}
+.about__award .about__award-index .about__award-head {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #974D24;
+  font-family: "Arno Pro", "sans-serif";
+  margin-bottom: 40px;
+}
+.about__award .about__award-index .about__award-desc {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 30px;
+  margin-left: 65px;
+  color: #130F02;
+  font-family: "futura-regular", "sans-serif";
+  font-weight: 300;
+}
+.about__award .about__award-index .about__award-order {
+  display: flex;
+  padding-top: 55px;
+}
+.about__award .about__award-index .about__award-order .col-lg-8 {
+  padding-left: 65px;
+}
+.about__award .about__award-index .about__award-order .order-title {
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.03em;
+  color: #974D24;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.about__award .about__award-index .about__award-order .order-desc {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 30px;
+  color: #130F02;
+  /* font-family: 'legan','sans-serif' !important; */
+  font-family: "futura-regular", "sans-serif";
+  font-weight: 300;
+}
+.about__award .about__award-index .about__award-order .order-image {
+  text-align: end;
+}
+.about__award .about__award-index .about__award-order .order-image img {
+  width: 200px;
+  height: 200px;
+}/*# sourceMappingURL=about-award.css.map */
