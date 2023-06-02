@@ -16,6 +16,9 @@
   justify-content: center;
   gap: 1.3rem;
 }
+.about__slider .about__item-order .arrow {
+  width: 4%;
+}
 .about__slider .about__item-order .item-wrapper img {
   margin: 0 auto;
   display: flex;
