@@ -1,0 +1,50 @@
+.about__item {
+  background: #F4E5D4;
+}
+.about__item .about__item-wrapper {
+  padding: 80px 0;
+  display: flex;
+}
+.about__item .about__item-wrapper .about__item-text {
+  position: relative;
+}
+.about__item .about__item-wrapper .about__item-text h4 {
+  font-family: "Arno Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  max-width: 140px;
+  font-size: 46px;
+  line-height: 66px;
+  color: #974D24;
+  position: absolute;
+  left: 200px;
+  top: 55px;
+}
+.about__item .about__item-wrapper .about__item-text .about__item-num {
+  font-size: 230px;
+  font-weight: bold;
+  color: #DDC6AE;
+  opacity: 0.35;
+  font-family: "Arno Pro", sans-serif;
+}
+.about__item .about__item-wrapper .about__thumbnail {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+.about__item .about__item-wrapper .about__thumbnail .about__item-desc {
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  font-family: "futura-regular", "sans-serif";
+  font-weight: 400;
+  background: #E7D2BB;
+  padding: 50px;
+  position: absolute;
+  max-width: 830px;
+  width: 100%;
+  bottom: -54px;
+  transition: 0.5s all ease-in-out;
+  left: -37%;
+  transition: 0.5s all ease-in-out;
+}/*# sourceMappingURL=about-item.css.map */
