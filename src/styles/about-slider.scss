@@ -3,7 +3,7 @@
 
     .slick-next {
         right: -75px;
-        top: 59%;
+        top: 58%;
         border-radius: 3px;
         padding: 5px;
         margin: 5px;
@@ -89,6 +89,68 @@
         .slick-next{
             right: 10px;
             top: 51%;
+        }
+        .about-head{
+            font-size: 40px;
+        }
+        .about-text{
+            font-size: 14px;
+        }
+
+        .item-wrapper{
+            img{
+                width: 65px !important;
+            }
+        }
+        
+        .about__item-order{
+            gap: .4rem;
+        }
+    }
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .about__slider{
+
+        .slick-prev{
+            left: -15.5px;
+            top: 51%;
+        }
+        .slick-next{
+            right: -15.5px;
+            top: 51%;
+        }
+        .about-head{
+            font-size: 40px;
+        }
+        .about-text{
+            font-size: 14px;
+        }
+
+        .item-wrapper{
+            img{
+                width: 65px !important;
+            }
+        }
+        
+        .about__item-order{
+            gap: .4rem;
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .about__slider{
+
+        .slick-prev{
+            top: 55%;
+            left: -1px;
+        }
+        .slick-next{
+            right: 15.5px;
+            top: 55%;
         }
         .about-head{
             font-size: 40px;

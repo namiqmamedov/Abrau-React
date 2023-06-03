@@ -79,3 +79,31 @@
         }
     }
 }
+
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .about__award-index{
+        .about__award-order{
+            flex-wrap: wrap;
+            .order-image{
+                text-align: center !important;
+            }
+            .col-lg-8{
+                padding-left: 0 !important;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .about__award-index{
+        .about__award-order{
+            .order-image{
+                text-align: center !important;
+            }
+            .col-lg-8{
+                padding-left: 0 !important;
+            }
+        }
+    }
+}

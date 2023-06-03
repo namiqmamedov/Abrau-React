@@ -46,7 +46,7 @@ const AboutAwards = () => {
             </p>
             {awardData.map((item,index) => (
               <div className="about__award-order" key={index}>
-              <div className="col-lg-8 col-12">
+              <div className="col-lg-8 col-md-8 col-12">
               <h3 className="order-title">
                {item.title}
                </h3>
@@ -54,7 +54,7 @@ const AboutAwards = () => {
                {item.description}
                </p>
               </div>
-               <div className="col-lg-4 col-12">
+               <div className="col-lg-4 col-md-4 col-12">
                <div className="order-image">
                    <img src={item.img} alt="Award Image" />
                </div>
