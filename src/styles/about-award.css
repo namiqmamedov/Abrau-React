@@ -57,4 +57,16 @@
 .about__award .about__award-index .about__award-order .order-image img {
   width: 200px;
   height: 200px;
+}
+
+@media screen and (max-width: 576px) {
+  .about__award-index .about__award-order {
+    flex-wrap: wrap;
+  }
+  .about__award-index .about__award-order .order-image {
+    text-align: center !important;
+  }
+  .about__award-index .about__award-order .col-lg-8 {
+    padding-left: 0 !important;
+  }
 }/*# sourceMappingURL=about-award.css.map */

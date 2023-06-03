@@ -34,8 +34,8 @@ import arrow13 from '../../../assets/about/arrow13.svg'
 import arrow14 from '../../../assets/about/arrow14.svg'
 import arrow15 from '../../../assets/about/arrow15.svg'
 import Slider from "react-slick";
-import {GrLinkNext} from 'react-icons/gr'
-import {GrLinkPrevious} from 'react-icons/gr'
+import {GrNext} from 'react-icons/gr'
+import {GrPrevious} from 'react-icons/gr'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -45,8 +45,8 @@ const AboutSlider = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         draggable: true,
-        prevArrow: <button><GrLinkPrevious className='prev-btn'/></button>,
-        nextArrow: <button><GrLinkNext className='next-btn'/></button>,
+        prevArrow: <button><GrPrevious className='prev-btn'/></button>,
+        nextArrow: <button><GrNext className='next-btn'/></button>,
         responsive: [
           {
             breakpoint: 1200,

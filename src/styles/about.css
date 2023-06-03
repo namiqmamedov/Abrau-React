@@ -48,4 +48,25 @@
   top: -16px;
   bottom: 0;
   cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+  .modal-box .thumbnail {
+    height: 311px;
+  }
+  .about-main .centered {
+    top: 10%;
+    left: 50%;
+    min-width: 324px;
+  }
+  .about-main .centered p {
+    font-size: 1rem;
+  }
+  .modal-wrapper iframe {
+    width: 350px;
+    height: 300px;
+  }
+  .modal-wrapper .close-box {
+    display: none;
+  }
 }/*# sourceMappingURL=about.css.map */

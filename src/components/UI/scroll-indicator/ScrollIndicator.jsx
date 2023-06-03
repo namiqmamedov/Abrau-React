@@ -27,10 +27,10 @@ const ScrollIndicator = ({ color, showText }) => {
       const height =
         document.documentElement.scrollHeight -
         document.documentElement.clientHeight;
-      const scrolled = (winScroll / height) * 100;
+      const scrolled = (winScroll / height) * 500;
       const scrolled2 = (winScroll / height) * 228.5;
-      const scrolled3 = (winScroll / height) * 130;
-      const scrolled4 = (winScroll / height) * 130;
+      const scrolled3 = (winScroll / height) * 230;
+      const scrolled4 = (winScroll / height) * 120;
       const scrolled5 = (winScroll / height) * 95;
       setProgressWidth(scrolled);
       setProgressWidth2(scrolled2);
@@ -42,8 +42,9 @@ const ScrollIndicator = ({ color, showText }) => {
 
   return (
     <>
-    <ProgressContainer className="indicator-item">
-      <ProgressBar className="indicator-main" width={progressWidth} color={color}>
+    <div className="indicator">
+    <ProgressContainer id="indicator-item" className="indicator-item">
+      <ProgressBar id="indicator-main" className="indicator-main" width={progressWidth} color={color}>
         {showText && (
           <ProgressText width={progressWidth}>{`${Math.round(
             progressWidth
@@ -51,42 +52,43 @@ const ScrollIndicator = ({ color, showText }) => {
         )}
       </ProgressBar>
     </ProgressContainer>
-    <ProgressContainer className="indicator-item-second">
-    <ProgressBar className="indicator-main-second" width={progressWidth2} color={color}>
+    </div>
+    <ProgressContainer id="indicator-item" className="indicator-item-second">
+    <ProgressBar id="indicator-main" className="indicator-main-second" width={progressWidth2} color={color}>
       {showText && (
         <ProgressText width={progressWidth2}>{`${Math.round(
           progressWidth2
         )}%`}</ProgressText>
       )}
     </ProgressBar>
-  </ProgressContainer>
-  <ProgressContainer className="indicator-item-third">
-    <ProgressBar className="indicator-main-second" width={progressWidth3} color={color}>
-      {showText && (
-        <ProgressText width={progressWidth3}>{`${Math.round(
-          progressWidth3
-        )}%`}</ProgressText>
-      )}
-    </ProgressBar>
-  </ProgressContainer>
-  <ProgressContainer className="indicator-item-fourth">
-    <ProgressBar className="indicator-main-second" width={progressWidth4} color={color}>
-      {showText && (
-        <ProgressText width={progressWidth4}>{`${Math.round(
-          progressWidth4
-        )}%`}</ProgressText>
-      )}
-    </ProgressBar>
-  </ProgressContainer>
-  <ProgressContainer className="indicator-item-fifth">
-    <ProgressBar className="indicator-main-second" width={progressWidth5} color={color}>
-      {showText && (
-        <ProgressText width={progressWidth5}>{`${Math.round(
-          progressWidth5
-        )}%`}</ProgressText>
-      )}
-    </ProgressBar>
-  </ProgressContainer>
+    </ProgressContainer>
+    <ProgressContainer id="indicator-item" className="indicator-item-third">
+      <ProgressBar id="indicator-main" className="indicator-main-third" width={progressWidth3} color={color}>
+        {showText && (
+          <ProgressText width={progressWidth3}>{`${Math.round(
+            progressWidth3
+          )}%`}</ProgressText>
+        )}
+      </ProgressBar>
+    </ProgressContainer>
+    <ProgressContainer id="indicator-item" className="indicator-item-fourth">
+      <ProgressBar id="indicator-main" className="indicator-main-fourth" width={progressWidth4} color={color}>
+        {showText && (
+          <ProgressText width={progressWidth4}>{`${Math.round(
+            progressWidth4
+          )}%`}</ProgressText>
+        )}
+      </ProgressBar>
+    </ProgressContainer>
+    <ProgressContainer id="indicator-item" className="indicator-item-fifth">
+      <ProgressBar  id="indicator-main" className="indicator-main-fifth" width={progressWidth5} color={color}>
+        {showText && (
+          <ProgressText width={progressWidth5}>{`${Math.round(
+            progressWidth5
+          )}%`}</ProgressText>
+        )}
+      </ProgressBar>
+    </ProgressContainer>
   </>
   );
 };

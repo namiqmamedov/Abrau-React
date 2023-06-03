@@ -11,6 +11,7 @@ import AboutItem from '../components/UI/about-item/AboutItem';
 import AboutSlider from '../components/UI/about-slider/AboutSlider';
 import AboutAwards from '../components/UI/about-award/AboutAwards';
 
+
 const style = {
     position: 'absolute',
     top: '50%',
@@ -36,9 +37,10 @@ const About = () => {
                           className='thumbnail'
                           style={{
                           boxShadow: "inset 0 0 0 2000px rgba(0, 0, 0, 0.4)",
-                          backgroundImage: 'url("https://abrau.az/front/img/about-img.webp")',
+                          backgroundImage: `url(${aboutImage})`,
                           backgroundSize: "cover",
-                          backgroundRepeat: "no-repeat"
+                          backgroundRepeat: "no-repeat",
+                          backgroundPosition: "center"
                       }}
                           variant="primary"
                           onClick={handleOpen}></div>
