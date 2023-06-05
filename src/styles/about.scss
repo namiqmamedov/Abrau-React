@@ -2,23 +2,24 @@
     cursor: pointer;
     position: relative;
 
-    .centered{
+    .centered {
         position: absolute;
         top: 39%;
         left: 50%;
         max-width: 600px;
-        transform: translate(-50%,50%);
+        transform: translate(-50%, 50%);
         text-align: center;
-       p{
-        font-size: 26px;
-        line-height: 24px;
-        color: #ffffff;
-        font-family: 'futura-light','sans-serif';
-       }
 
-      .play-btn{
-        margin-bottom: 30px;
-      }
+        p {
+            font-size: 26px;
+            line-height: 24px;
+            color: #ffffff;
+            font-family: 'futura-light', 'sans-serif';
+        }
+
+        .play-btn {
+            margin-bottom: 30px;
+        }
     }
 
 }
@@ -30,7 +31,7 @@
     outline: none !important;
     z-index: 1111111111111 !important;
 
-    .thumbnail{
+    .thumbnail {
         width: 100% !important;
         height: 650px;
     }
@@ -41,7 +42,7 @@
     }
 }
 
-.modal-wrapper{
+.modal-wrapper {
     box-shadow: none !important;
     border: none !important;
     z-index: 111111111111 !important;
@@ -61,34 +62,36 @@
 
 
 @media screen and (max-width: 576px) {
-        .modal-box{
-            .thumbnail{
-                height: 311px;
+    .modal-box {
+        .thumbnail {
+            height: 311px;
+        }
+    }
+
+
+    .about-main {
+        .centered {
+            top: 10%;
+            left: 50%;
+            min-width: 324px;
+
+            p {
+                font-size: 1rem;
             }
         }
+    }
 
-
-        .about-main{
-            .centered{
-                top: 10%;
-                left: 50%;
-                min-width: 324px;
-
-                p{
-                    font-size: 1rem;
-                }
-            }
+    .modal-wrapper {
+        iframe {
+            width: 350px;
+            height: 300px;
         }
 
-        .modal-wrapper{
-            iframe{
-                width: 350px;
-                height: 300px;
-            }
-            .close-box{
-                display: none;
-            }   
+        .close-box {
+            display: none;
         }
+    }
 
-        
+
 }
+

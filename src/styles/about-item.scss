@@ -267,4 +267,100 @@
             }
         }
     }
+
+    #scroll-vertical {
+        border-left: 2px solid #DDC6AE !important;
+        height: 2000px !important;
+        max-width: 0 !important;
+        width: 0 !important;
+        top: -1004px !important;
+        right: 0px;
+        left: 13% !important;
+    }
+    
+    #scroll-vertical-second {
+        border-left: 2px solid #DDC6AE !important;
+        height: 2510px !important;
+        max-width: 0 !important;
+        width: 0 !important;
+        top: -894px !important;
+        right: 0px;
+        left: 89% !important;
+    }
+    
+    #scroll-vertical-third {
+        border-left: 2px solid #DDC6AE !important;
+        height: 1551px !important;
+        max-width: 0 !important;
+        width: 0 !important;
+        top: -437px !important;
+        right: 0px;
+        left: 12% !important;
+    }
+    
+    
+    #scroll-horizontal {
+        left: 12% !important;
+        width: 3551px !important;
+        border-left: 2px solid #DDC6AE !important;
+        background-color:  #DDC6AE;
+        height: 2px !important;
+    }
+    
+    #scroll-horizontal-second {
+        left: 12% !important;
+        width: 2285px !important;
+        border-left: 2px solid #DDC6AE !important;
+    }
+}
+
+.scroll-progress {
+    position: relative;
+}
+
+#scroll-vertical {
+    border-left: 2px solid #DDC6AE !important;
+    height: 2000px !important;
+    max-width: 0 !important;
+    width: 0 !important;
+    top: -1004px !important;
+    right: 0px;
+    left: 13% !important;
+}
+
+#scroll-vertical-second {
+    border-left: 2px solid #DDC6AE !important;
+    height: 2373px !important;
+    max-width: 0 !important;
+    width: 0 !important;
+    top: -866px !important;
+    margin-top: 30px !important;
+    right: 0px;
+    left: 89% !important;
+}
+
+#scroll-vertical-third {
+    border-left: 2px solid #DDC6AE !important;
+    height: 1551px !important;
+    max-width: 0 !important;
+    width: 0 !important;
+    top: -417px !important;
+    right: 0px;
+    left: 12% !important;
+    margin-top: 33px !important;
+}
+
+
+#scroll-horizontal {
+    left: 12% !important;
+    width: 3394px !important;
+    border-left: 2px solid #DDC6AE !important;
+    background-color:  #DDC6AE;
+    height: 2px !important;
+}
+
+#scroll-horizontal-second {
+    left: 12% !important;
+    width: 2180px !important;
+    border-left: 2px solid #DDC6AE !important;
 }
