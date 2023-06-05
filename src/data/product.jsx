@@ -13,7 +13,7 @@ const product = [
         price: 29.0,
         image: Product1,
         level:8, 
-        category: "AbrauLight",
+        category: "Abrau Light",
         desc: 'Nəcib çəhrayı rəngli köpüklənən içki',
       },
       {
@@ -22,7 +22,7 @@ const product = [
         price: 29.0,
         image: Product2,
         level:8, 
-        category: "AbrauLight",
+        category: "Abrau Junior",
         desc: 'Gənc, aktiv və parlaq olanlar üçün "Abrau-Dürso" şampan notları ilə alkoqolsuz köpüklənən içki',
       },
       {
@@ -31,7 +31,7 @@ const product = [
         price: 29.0,
         image: Product3,
         level:9, 
-        category: "Women",
+        category: "İmperiyal",
         desc: "Motmutunun parlaq, dərin qaymaqlı notları və zərif çiçək çalarlarının zərif ətri ilə şərab",
       },
       {
@@ -40,7 +40,7 @@ const product = [
         price: 29.0,
         image: Product4,
         level:0, 
-        category: "Women",
+        category: "Brut d’Or",
         desc: 'Gənc, aktiv və parlaq olanlar üçün "Abrau-Dürso" şampan notları ilə alkoqolsuz köpüklənən içki',
       },
       {
@@ -49,7 +49,7 @@ const product = [
         price: 29.0,
         image: Product5,
         level:5, 
-        category: "Women",
+        category: "Viktor Dravinyi",
         desc: "Motmutunun parlaq, dərin qaymaqlı notları və zərif çiçək çalarlarının zərif ətri ilə şərab",
       },
       {
@@ -58,7 +58,7 @@ const product = [
         price: 29.0,
         image: Product6,
         level:9, 
-        category: "Women",
+        category: "Rus köpüklənən",
         desc: 'Nəcib çəhrayı rəngli köpüklənən içki',
       },
       {
@@ -67,7 +67,7 @@ const product = [
         price: 29.0,
         image: Product1,
         level:6, 
-        category: "Women",
+        category: "Rus köpüklənən",
         desc: 'Gənc, aktiv və parlaq olanlar üçün "Abrau-Dürso" şampan notları ilə alkoqolsuz köpüklənən içki',
       },
       {
@@ -76,7 +76,7 @@ const product = [
         price: 29.0,
         image: Product2,
         level:8, 
-        category: "Women",
+        category: "İmperiyal",
         desc: "Yayın və cənub günəşinin atmosferini özünə hopdurmuş istənilən uşaq şənliyini bəzəyəcək və xoş dadla sevindirəcək yüngül təravətləndirici içki",
       },
       {
@@ -85,7 +85,7 @@ const product = [
         price: 29.0,
         image: Product3,
         level:7, 
-        category: "Women",
+        category: "İmperiyal",
         desc: 'Gənc, aktiv və parlaq olanlar üçün "Abrau-Dürso" şampan notları ilə alkoqolsuz köpüklənən içki',
       },
       {
@@ -94,7 +94,7 @@ const product = [
         price: 29.0,
         image: Product4,
         level:7, 
-        category: "Women",
+        category: "Brut d’Or",
         desc: "Yayın və cənub günəşinin atmosferini özünə hopdurmuş istənilən uşaq şənliyini bəzəyəcək və xoş dadla sevindirəcək yüngül təravətləndirici içki",
       },
 ]

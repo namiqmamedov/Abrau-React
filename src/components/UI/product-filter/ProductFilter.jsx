@@ -12,80 +12,59 @@ import products from '../../../data/product';
 import WineCard from '../wine-card/WineCard';
 
 const ProductFilter = () => {
-  const [category, setCategory] = useState("Hamısı");
-  const [allProducts, setAllProducts] = useState(products);
-  const [checked, setChecked] = React.useState(false);
-  const handleChange = (event) => {
-    setChecked(event.target.checked);
-  };
-  useEffect(() => {
-      if(category === "HAMISI"){
-          setAllProducts(products)
+
+  const [category, setCategory] = useState([
+    'Hamısı',
+    'Abrau Light',
+    'Abrau Junior',
+    'İmperiyal',
+    'Brut d’Or',
+    'Viktor Dravinyi',
+    'Rus köpüklənən',
+  ]);
+
+  let [categoryFilters, setcategoryFilters] = useState(new Set());
+
+  function updateFilters(checked, categoryFilter) {
+    if (checked)
+      setcategoryFilters((prev) => new Set(prev).add(categoryFilter));
+    if (!checked)
+      setcategoryFilters((prev) => {
+        const next = new Set(prev);
+        next.delete(categoryFilter);
+        return next;
+      });
+      if(category === "Hamısı"){
+        return products;
       }
-      if(category === "ABRAULIGHT"){
-          const filteredProducts = products.filter(
-              (item) => item.category === "AbrauLight"
-          );
-          setAllProducts(filteredProducts);
-      }
-  }, [category])
+  }
+  
+
+  const filteredProducts =
+    categoryFilters.size === 0
+      ? products
+      : products.filter((p) => categoryFilters.has(p.category));
 
   return (
     <div className='accordion__main'>
-       <FormControlLabel
-      control={<Checkbox checked={checked}  onChange={handleChange} />}
-      label="Check me"
-      className={`d-flex align-items-center gap-2 ${category  === 'ABRAULIGHT' ? 'foodBtnAactive' : '' } `} onClick={()=> checked ?  setCategory('HAMISI') :  setCategory('ABRAULIGHT') }
-    />
-       <Accordion className='accordion__item'>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
-          <Typography>Köpüklənən</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-        <div className="filter__options">
-          <FormGroup>
-      <FormControlLabel className={`d-flex align-items-center gap-2 ${category  === 'HAMISI' ? 'foodBtnAactive' : '' } `} onChange={()=> setCategory('ABRAULIGHT')} control={<Checkbox  />} label="Hamısı" />
-      <FormControlLabel className={`d-flex align-items-center gap-2 ${category  === 'ABRAULIGHT' ? 'foodBtnAactive' : '' } `} onClick={()=> setCategory('ABRAULIGHT')} control={<Checkbox  />} label="Abrau Light" />
-      <FormControlLabel control={<Checkbox  />} label="Abrau Junior" />
-      <FormControlLabel control={<Checkbox  />} label="İmperiyal" />
-      <FormControlLabel control={<Checkbox  />} label="Brut d’Or" />
-      <FormControlLabel control={<Checkbox  />} label="Viktor Dravinyi" />
-      <FormControlLabel control={<Checkbox  />} label="Rus köpüklənən" />
-    </FormGroup>
-          </div>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion id="accordion-item" className='accordion__item'>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2a-content"
-          id="panel2a-header"
-        >
-          <Typography>Şərablar</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-        <div className="filter__options">
-          <FormGroup>
-      <FormControlLabel control={<Checkbox />} label="Hamısı" />
-      <FormControlLabel control={<Checkbox />} label="Abrau" />
-      <FormControlLabel control={<Checkbox />} label="Az Abrau" />
-      <FormControlLabel control={<Checkbox />} label="Ağdam" />
-
-    </FormGroup>
-          </div>
-        </AccordionDetails>
-      </Accordion>
-        {
-          allProducts.map(item=>(
-            <div key={item.id} className='mt-5'>
-              <WineCard item={item}/>
+        {category.map((elm, index) => {
+          return (
+            <div className="form-check ms-2" key={index}>
+              <label className="form-check-label">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  onChange={(e) => updateFilters(e.target.checked, elm)}
+                />
+                {elm}
+              </label>
             </div>
-          ))
-        }
+          );
+        })}
+       
+       {filteredProducts.map((item,index) => (
+          <WineCard key={index} item={item} />
+        ))}
     </div>
   )
 }
