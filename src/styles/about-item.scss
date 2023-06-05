@@ -102,6 +102,9 @@
 
 @media screen and (max-width: 576px) 
 {
+    .scroll-element{
+        display: none;
+    }
     #indicator-item{
         display: none;
     }
@@ -150,6 +153,10 @@
 
 @media screen and (min-width: 576px) and (max-width: 768px) 
 {
+
+    .scroll-element{
+        display: none;
+    }
     #indicator-item{
         display: none;
     }
@@ -198,6 +205,9 @@
 
 @media screen and (min-width: 768px) and (max-width: 992px) 
 {
+    .scroll-element{
+        display: none;
+    }
     #indicator-item{
         display: none;
     }
@@ -364,3 +374,4 @@
     width: 2180px !important;
     border-left: 2px solid #DDC6AE !important;
 }
+

@@ -13,6 +13,8 @@ import aboutImg03 from '../assets/product/detail/about03.svg'
 import aboutImg04 from '../assets/product/detail/about04.svg'
 import '../styles/wine-card.css'
 import WineCard from '../components/UI/wine-card/WineCard';
+import { useParams } from 'react-router-dom';
+import products from '../data/product';
 
 const aboutCard = [
     {
@@ -76,6 +78,9 @@ const ProductDetails = () => {
             },
         ],
   };  
+  const {id} = useParams();
+  const product = products.find(product => product.id == id)
+  const {title,price,image,desc,level} = product
   return (
     <>
     <div className='product__detail'> 
@@ -87,16 +92,15 @@ const ProductDetails = () => {
                     </div>
                     <div className="col-lg-6">
                         <h2 className='product-title'>
-                            CULLEN
+                            {title}
                         </ h2>
                         <p className='product-description'>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Urna adipiscing tortor scelerisque auctor egestas viverra.
+                            {desc}
                         </p>
                         <h3 className='product-origin title'>Mənşəyi</h3>
                         <p>Azərbaycan</p>
                         <h3 className='product-degree title'>Alkoqol dərəcəsi</h3>
-                        <p>8%</p>
+                        <p>{level}%</p>
                         <h3 className='product-year title'>İstehsal ili</h3>
                         <p></p>
                         <h3 className='product-about title'>Məhsul haqqında</h3>

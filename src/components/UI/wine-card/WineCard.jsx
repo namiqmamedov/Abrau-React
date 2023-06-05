@@ -10,9 +10,11 @@ const WineCard = (props) => {
   return (
     <div className='card-index'>
         <div className="right__border"></div>
+        <Link to={`/product/${id}`}>
         <img src={image} alt="Product Image" />
+        </Link>
         <div class="product-text">
-          <Link>
+        <Link to={`/product/${id}`}>
             <h4 class="product-head">
                   {title}
             </h4>
@@ -20,7 +22,7 @@ const WineCard = (props) => {
                   Spirt:  0%
               </p>
           </Link>
-            <Link >
+          <Link to={`/product/${id}`}>
             <div className='product__btn'>
              <Button variant="outlined">Ətraflı</Button>
             </div>

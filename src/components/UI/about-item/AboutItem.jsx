@@ -32,7 +32,7 @@ const AboutItem = () => {
              </div>
              <div className="scroll-progress">
              <motion.div 
-             className='motion-div'
+             className='motion-div scroll-element'
              id='scroll-vertical'
              style={{
                 scaleY : scrollYProgress,
@@ -73,7 +73,7 @@ const AboutItem = () => {
                 </div>
                 <div className="scroll-progress">
                     <motion.div 
-                    className='motion-div'
+                    className='motion-div scroll-element'
                     id='scroll-horizontal'
                     style={{
                         scaleX : scrollYProgress,
@@ -89,7 +89,7 @@ const AboutItem = () => {
                 </div>
                 <div className="scroll-progress">
                     <motion.div 
-                    className='motion-div'
+                    className='motion-div scroll-element'
                     id='scroll-vertical-second'
                     style={{
                         scaleY : scrollYProgress,
@@ -127,7 +127,7 @@ const AboutItem = () => {
                 </div>
                 <div className="scroll-progress">
                     <motion.div 
-                    className='motion-div'
+                    className='motion-div scroll-element'
                     id='scroll-horizontal-second'
                     style={{
                         scaleX : scrollYProgress,
@@ -144,7 +144,7 @@ const AboutItem = () => {
                 </div>
                 <div className="scroll-progress">
                 <motion.div 
-                className='motion-div'
+                className='motion-div scroll-element'
                 id='scroll-vertical-third'
                 style={{
                     scaleY : scrollYProgress,

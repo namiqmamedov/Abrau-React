@@ -92,6 +92,9 @@
   flex-direction: column;
   position: relative;
 }
+.product .product__list-item .card-index a {
+  text-align: center;
+}
 .product .product__list-item .card-index:nth-child(3n) .right__border {
   display: none;
 }

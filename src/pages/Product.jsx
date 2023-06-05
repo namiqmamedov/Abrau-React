@@ -4,8 +4,7 @@ import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Link from '@mui/material/Link';
 import ProductFilter from '../components/UI/product-filter/ProductFilter';
 import WineCard from '../components/UI/wine-card/WineCard'
-import productData from '../data/product';
-
+import products from '../data/product';
 
 const Product = () => {
     return ( <>
@@ -46,7 +45,7 @@ const Product = () => {
                 </div>
                 <div className="col-lg-8 col-md-7">
                     <div className="product__list-item">
-                    {productData.map((item,index)=>(
+                    {products.map((item,index)=>(
                         <WineCard key={index} item={item}/>
                     ))}
                     </div>

@@ -103,6 +103,10 @@
             flex-direction: column;
             position: relative;
 
+            a{
+                text-align: center;
+            }
+
             &:nth-child(3n) {
                 .right__border {
                     display: none;
