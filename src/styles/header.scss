@@ -8,6 +8,10 @@
     bottom: 0;
     z-index: 11111;
 
+    .navbar-toggler{
+        display: none;
+    }
+
     .active{
         color: #EF9700 !important;
     }
@@ -17,10 +21,10 @@
             color: white;
         }
     }
-
-    .header__social-link{
+    .drawer__menu{
         display: none;
     }
+
 
     .navbar-nav {
         align-items: center;
@@ -63,16 +67,33 @@
     .header__social-link {
         width: 57%;
         text-align: end;
-        display: flex;
         justify-content: end;
         gap: 1rem;
-        display: block;
+        display: block !important;
 
         svg {
             width: 1rem;
             height: 1rem;
             color: white;
         }
+    }
+
+    .drawer__menu{
+        svg{
+            color: white;
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+
+    .drawer__index{
+        background: black !important;
+        z-index: 9999999999 !important;
+        h1{
+            color: white;
+            font-size: 40px;
+        }
+
     }
 
     .navbar-toggler{
@@ -84,6 +105,57 @@
             border-radius: 0px;
             box-shadow: none !important;
         }
+    }
+
+     .MuiDrawer-paper{
+        width: 100%;
+        padding: 70px 20px;
+        background: black !important;
+
+        .top-content{
+            display: flex;
+            justify-content: space-between;
+            
+            .close-mark{
+                margin-top: auto;
+                margin-bottom: auto;
+                color: white;
+
+
+                svg{
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+            }
+        }
+
+        .main-content{
+            padding-top: 70px;
+
+            .navbar-nav{
+                a{
+                    padding-bottom: 20px;
+                    color: white;
+                }
+            }
+
+           .social-link{
+            margin-left: -15px;
+            img{
+                width: 10%;
+                height: 20px;
+            }
+           }
+        }
+
+     }
+
+     .drawer__menu{
+        display: block !important;
+     }
+     
+    .header__social-link{
+        display: none;
     }
 }
 
