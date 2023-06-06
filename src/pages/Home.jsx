@@ -86,9 +86,9 @@ const Home = () => {
                         Abrau zümrüd gölünün sahilində təsis edilmişdir. Burada
                         bu gün bütün dünyada tanınan yüksək keyfiyyətli oynaq
                         şərablar yaradılır.</p>
-                        <div className='about__btn'>
+                        <Link to={'../about'} className='about__btn'>
                             <Button variant="outlined">Ətraflı</Button>
-                        </div>
+                        </Link>
                     </div>
                 </div>
                 <div className="col-lg-6">
@@ -127,7 +127,7 @@ const Home = () => {
                         <h2 className="gif-head">
                           Abrau-Durso – oynaq şərab eksperti! 
                         </h2>
-                        <Link className='video__btn' to={'about'}>
+                        <Link className='video__btn' to={'../about'}>
                         <Button variant="outlined">Ətraflı</Button>
                         </Link>
             </div>
@@ -143,14 +143,14 @@ const Home = () => {
             <img src={HomeBrand} alt="Brand Image" />
             <div className="bottom-left">
                 Az Abrau
-                <Link className='brand__btn' to={'about'}>
+                <Link className='brand__btn' to={'../about'}>
                         <Button variant="outlined">Ətraflı</Button>
                 </Link>
             </div>
             
             <div className="bottom-right">
                 Abrau Durso
-                <Link className='brand__btn' to={'about'}>
+                <Link className='brand__btn' to={'../about'}>
                         <Button variant="outlined">Ətraflı</Button>
                 </Link>
             </div>
