@@ -5,6 +5,9 @@
 .news-index .slick-track {
   margin-left: 25px;
 }
+.news-index a{
+  width: 100%;
+}
 .news-index .slick-next {
   right: 43%;
   top: 111%;
