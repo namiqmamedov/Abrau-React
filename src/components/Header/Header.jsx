@@ -6,17 +6,28 @@ import Facebook from "../../assets/header/facebook.svg";
 import Instagram from "../../assets/header/instagram.svg";
 import { AiOutlineGlobal } from "react-icons/ai";
 import { BsSearch } from "react-icons/bs";
-import { FaFacebookF } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { AiOutlineClose } from "react-icons/ai";
 import { Drawer, Box } from "@mui/material";
-import "../../styles/header.css";
 import { useState } from "react";
+import "../../styles/header.css";
 
 function Header() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [dropdownState, setDropdownState] = useState(false);
+  const [dropdownValue, setDropdownValue] = useState("");
+
+  const handleDropdownClick = () => {
+    setDropdownState(!dropdownState);
+  };
+  const handleDropdownClose = () => {
+    setDropdownState(false);
+  };
+  const handleSetDropdownValue = (value) => {
+    setDropdownValue(value);
+    setDropdownState(!dropdownState);
+  };
 
   return (
     <Navbar id="navbar" collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -123,7 +134,26 @@ function Header() {
           </Nav>
           <Nav>
             <div className="search-index">
-              <BsSearch />
+              <div className={`dropdown`}>
+               
+              <BsSearch onClick={handleDropdownClick} />
+                <div
+                  className={`dropdown-items ${
+                    dropdownState ? "isVisible" : "isHidden"
+                  }`}
+                >
+                  <form>
+                  <div className="dropdown-item">
+                    <div
+                      className="dropdown__link"
+                    >
+                     <input type="text" placeholder="Axtarış" />
+                    </div>
+                    <AiOutlineClose onClick={handleDropdownClose}/>
+                  </div>
+                  </form>
+                </div>
+              </div>
             </div>
             <div className="social-link">
               <Link
@@ -138,9 +168,9 @@ function Header() {
               >
                 <img src={Instagram} alt="Instagram" />
               </Link>
-             <Link>
-             <AiOutlineGlobal/>
-             </Link>
+              <Link>
+                <AiOutlineGlobal />
+              </Link>
             </div>
           </Nav>
         </Navbar.Collapse>

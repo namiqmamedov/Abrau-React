@@ -2,7 +2,6 @@ import productCommon from "../assets/product/product-common.jpg";
 import "../styles/product.css";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
-import ProductFilter from "../components/UI/product-filter/ProductFilter";
 import WineCard from "../components/UI/wine-card/WineCard";
 import products from "../data/product";
 import Accordion from "@mui/material/Accordion";
@@ -13,7 +12,6 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
-import { AiOutlineCheck } from "react-icons/ai";
 import { useEffect, useState } from "react";
 
 const Product = () => {

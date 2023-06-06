@@ -8,6 +8,24 @@
   bottom: 0;
   z-index: 11111;
 }
+
+#navbar .search-index button{
+  background: transparent;
+  border: none;
+}
+#navbar .search-index .dropdown-menu{
+  background: #EF9700;
+  display: flex;
+  align-items: center;
+}
+#navbar .search-index .dropdown-menu input{
+  background: transparent;
+  border: none;
+}
+#navbar .search-index button::after{
+ display: none;
+}
+
 #navbar .navbar-toggler {
   display: none;
 }
@@ -48,6 +66,66 @@
 #navbar .navbar-nav .social-link svg {
   color: white;
 }
+.dropdown {
+  min-width: 100px;
+}
+.dropdown-btn {
+  font-size: 16px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 4px;
+  height: 40px;
+  width: auto;
+  padding: 0 30px;
+}
+.dropdown-btn:hover,
+.dropdown-btn:focus {
+  background: #f2f2f2;
+}
+
+.dropdown-items {
+  width: 300px;
+  position: absolute;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 15px;
+  border-radius: 4px;
+  background: #EF9700;
+  right: -55%;
+  top: 150%;
+}
+.dropdown-item {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  cursor: pointer;
+  display: flex !important;
+  justify-content: space-between !important;
+}
+.dropdown-item svg {
+  display: inline-block;
+}
+.dropdown input{
+  border: none !important;
+  outline: none !important;
+  background: transparent;
+}
+.dropdown-item:not(first-child) {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.dropdown-item:not(last-child) {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.isVisible {
+  visibility: visible;
+}
+.isHidden {
+  visibility: hidden;
+}
+
 
 @media screen and (max-width: 576px) {
   .drawer__menu svg {
@@ -131,6 +209,64 @@
     border-radius: 0px;
     box-shadow: none !important;
   }
+  .drawer__index {
+    background: black !important;
+    z-index: 9999999999 !important;
+  }
+  .drawer__index h1 {
+    color: white;
+    font-size: 40px;
+  }
+  .navbar-toggler {
+    border: none !important;
+    border-radius: 0px !important;
+  }
+  .navbar-toggler:focus {
+    border: none;
+    border-radius: 0px;
+    box-shadow: none !important;
+  }
+  .MuiDrawer-paper {
+    width: 100%;
+    padding: 70px 20px;
+    background: black !important;
+  }
+  .MuiDrawer-paper .top-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .MuiDrawer-paper .top-content .close-mark {
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+  }
+  .MuiDrawer-paper .top-content .close-mark svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .MuiDrawer-paper .main-content {
+    padding-top: 70px;
+  }
+  .MuiDrawer-paper .main-content .navbar-nav a {
+    padding-bottom: 20px;
+    color: white;
+  }
+  .MuiDrawer-paper .main-content .social-link {
+    margin-left: -15px;
+  }
+  .MuiDrawer-paper .main-content .social-link img {
+    width: 10%;
+    height: 20px;
+  }
+  .drawer__menu {
+    display: block !important;
+  }
+
+  .drawer__menu svg{
+    color: white ;
+    width: 1.5rem ;
+    height: 1.5rem;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .header__social-link {
@@ -155,6 +291,64 @@
     border-radius: 0px;
     box-shadow: none !important;
   }
+  .drawer__index {
+    background: black !important;
+    z-index: 9999999999 !important;
+  }
+  .drawer__index h1 {
+    color: white;
+    font-size: 40px;
+  }
+  .navbar-toggler {
+    border: none !important;
+    border-radius: 0px !important;
+  }
+  .navbar-toggler:focus {
+    border: none;
+    border-radius: 0px;
+    box-shadow: none !important;
+  }
+  .MuiDrawer-paper {
+    width: 100%;
+    padding: 70px 20px;
+    background: black !important;
+  }
+  .MuiDrawer-paper .top-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .MuiDrawer-paper .top-content .close-mark {
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+  }
+  .MuiDrawer-paper .top-content .close-mark svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .MuiDrawer-paper .main-content {
+    padding-top: 70px;
+  }
+  .MuiDrawer-paper .main-content .navbar-nav a {
+    padding-bottom: 20px;
+    color: white;
+  }
+  .MuiDrawer-paper .main-content .social-link {
+    margin-left: -15px;
+  }
+  .MuiDrawer-paper .main-content .social-link img {
+    width: 10%;
+    height: 20px;
+  }
+  .drawer__menu {
+    display: block !important;
+  }
+
+  .drawer__menu svg{
+    color: white ;
+    width: 1.5rem ;
+    height: 1.5rem;
+  }
 }
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .header__social-link {
@@ -177,5 +371,9 @@
     border: none;
     border-radius: 0px;
     box-shadow: none !important;
+  }
+
+  #navbar .navbar-nav{
+    gap: 2.2rem;
   }
 }/*# sourceMappingURL=header.css.map */
