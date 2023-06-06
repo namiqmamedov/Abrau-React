@@ -37,6 +37,12 @@ const ProductFilter = () => {
       if(category === "Hamısı"){
         return products;
       }
+
+      // const resetFilter = setcategoryFilters((prev) => {
+      //   const next = new Set(prev);
+      //   next.delete(categoryFilter);
+      //   return next;
+      // });
   }
   
 

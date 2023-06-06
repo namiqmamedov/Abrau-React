@@ -30,6 +30,27 @@
   padding-top: 120px;
   background: #f4e5d4;
 }
+.product .form-check-label {
+  position: relative;
+}
+.product .form-check-label .form-check-input {
+  background: transparent;
+  width: 1em;
+  height: 1em;
+}
+.product .form-check-label .form-check-input:checked {
+  color: black;
+  border-color: black;
+}
+.product .form-check-label .form-check-input:focus {
+  box-shadow: none;
+}
+.product .form-check-input:checked[type=checkbox] {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='%4C192A' stroke='' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/></svg>");
+}
+.product .clear-filter {
+  cursor: pointer;
+}
 .product .filter__index {
   display: flex;
   justify-content: space-between;

@@ -14,6 +14,7 @@ const product = [
         image: Product1,
         level:8, 
         category: "Abrau Light",
+        wine: "Ağdam",
         desc: 'Nəcib çəhrayı rəngli köpüklənən içki',
       },
       {
@@ -23,6 +24,7 @@ const product = [
         image: Product2,
         level:8, 
         category: "Abrau Junior",
+        wine: "Abrau",
         desc: 'Gənc, aktiv və parlaq olanlar üçün "Abrau-Dürso" şampan notları ilə alkoqolsuz köpüklənən içki',
       },
       {
@@ -32,6 +34,7 @@ const product = [
         image: Product3,
         level:9, 
         category: "İmperiyal",
+        wine: "Abrau",
         desc: "Motmutunun parlaq, dərin qaymaqlı notları və zərif çiçək çalarlarının zərif ətri ilə şərab",
       },
       {
@@ -41,6 +44,7 @@ const product = [
         image: Product4,
         level:0, 
         category: "Brut d’Or",
+        wine: "Az Abrau",
         desc: 'Gənc, aktiv və parlaq olanlar üçün "Abrau-Dürso" şampan notları ilə alkoqolsuz köpüklənən içki',
       },
       {
@@ -50,6 +54,7 @@ const product = [
         image: Product5,
         level:5, 
         category: "Viktor Dravinyi",
+        wine: "Ağdam",
         desc: "Motmutunun parlaq, dərin qaymaqlı notları və zərif çiçək çalarlarının zərif ətri ilə şərab",
       },
       {
@@ -59,6 +64,7 @@ const product = [
         image: Product6,
         level:9, 
         category: "Rus köpüklənən",
+        wine: "Abrau",
         desc: 'Nəcib çəhrayı rəngli köpüklənən içki',
       },
       {
@@ -68,6 +74,7 @@ const product = [
         image: Product1,
         level:6, 
         category: "Rus köpüklənən",
+        wine: "Az Abrau",
         desc: 'Gənc, aktiv və parlaq olanlar üçün "Abrau-Dürso" şampan notları ilə alkoqolsuz köpüklənən içki',
       },
       {
@@ -77,6 +84,7 @@ const product = [
         image: Product2,
         level:8, 
         category: "İmperiyal",
+        wine: "Abrau",
         desc: "Yayın və cənub günəşinin atmosferini özünə hopdurmuş istənilən uşaq şənliyini bəzəyəcək və xoş dadla sevindirəcək yüngül təravətləndirici içki",
       },
       {
@@ -86,6 +94,7 @@ const product = [
         image: Product3,
         level:7, 
         category: "İmperiyal",
+        wine: "Az Abrau",
         desc: 'Gənc, aktiv və parlaq olanlar üçün "Abrau-Dürso" şampan notları ilə alkoqolsuz köpüklənən içki',
       },
       {
@@ -95,6 +104,7 @@ const product = [
         image: Product4,
         level:7, 
         category: "Brut d’Or",
+        wine: "Ağdam",
         desc: "Yayın və cənub günəşinin atmosferini özünə hopdurmuş istənilən uşaq şənliyini bəzəyəcək və xoş dadla sevindirəcək yüngül təravətləndirici içki",
       },
 ]
