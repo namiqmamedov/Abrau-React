@@ -54,9 +54,11 @@ const NewsCard = () => {
             {newsData.map((item,index) => (
                 <div id="news-item" className="news-index" key={index}>
                     <div className="item-effect"></div>
+                    <Link to={`/news/${item.id}`}>
                     <img className='news-image' id='news-image' src={item.image} alt="News Image"/>
+                    </Link>
                     <div className="news-content">
-                        <Link>
+                    <Link to={`/news/${item.id}`}>
                             <h3>{item.title}</h3>
                         </Link>
                     </div>

@@ -3,8 +3,12 @@ import Breadcrumbs from '@mui/material/Breadcrumbs';
 import BreadLink from '@mui/material/Link';
 import news from '../assets/news/news01.jpg'
 import '../styles/news-detail.css'
-
+import { useParams } from 'react-router-dom';
+import products from '../data/news';
 const NewsDetails = () => {
+    const {id} = useParams();
+    const product = products.find(product => product.id == id)
+    const {title,image,desc} = product 
   return (
     <>
          <div className = "breadcrumb__index" > 
@@ -30,10 +34,10 @@ const NewsDetails = () => {
                 <div className="row">
                     <div className="news-detail-main">
                         <div className="col-lg-8 col-12">
-                            <h2 className='text'>"SVVR KUBOKU - 2021" DEQUSTASİYA MÜSABIQƏSININ NƏTICƏLƏRI: "ABRAU-DURSO" KÖPÜKLÜ ŞƏRABLARI − RUSIYADA ƏN YAXŞILARIDIR</h2>
+                            <h2 className='text'>{title}</h2>
                         </div>
                         <div className="col-lg-4 col-12">
-                            <img src={news} alt="News Image" />
+                            <img src={image} alt="News Image" />
                         </div>
                     </div>
                     <div className='product__about'>
