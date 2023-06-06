@@ -101,6 +101,7 @@
   cursor: pointer;
   display: flex !important;
   justify-content: space-between !important;
+  align-items: center !important;
 }
 .dropdown-item svg {
   display: inline-block;
